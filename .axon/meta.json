@@ -1,0 +1,16 @@
+{
+  "version": "1.0.1",
+  "name": "text-xiuxian",
+  "path": "D:\\Code\\text-xiuxian",
+  "stats": {
+    "files": 19,
+    "symbols": 421,
+    "relationships": 1836,
+    "clusters": 7,
+    "flows": 8,
+    "dead_code": 2,
+    "coupled_pairs": 0,
+    "embeddings": 440
+  },
+  "last_indexed_at": "2026-05-08T04:04:30.925372+00:00"
+}

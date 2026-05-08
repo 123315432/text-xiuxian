@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Text Xiuxian</string>
+    <string name="title_activity_main">Text Xiuxian</string>
+    <string name="package_name">com.textxiuxian.game</string>
+    <string name="custom_url_scheme">com.textxiuxian.game</string>
+</resources>

@@ -1,0 +1,5 @@
+[
+  { "key": "jian", "name": "剑宗", "nameEn": "Sword Sect", "desc": "以剑入道，攻伐为先。弟子剑意凌厉，攻势凶猛。", "descEn": "The path of the sword, offense above all. Disciples wield razor-sharp sword intent.", "bonus": { "atk": 6, "spirit": 2 } },
+  { "key": "dan", "name": "丹宗", "nameEn": "Alchemy Sect", "desc": "炼丹悟药，续命为本。弟子气血充沛，灵力绵长。", "descEn": "Masters of pill refinement and longevity. Disciples enjoy robust vitality.", "bonus": { "hp": 30, "mp": 20 } },
+  { "key": "fu", "name": "符宗", "nameEn": "Talisman Sect", "desc": "画符布阵，万法归宗。弟子防御稳固，气运亨通。", "descEn": "Talisman crafting and formation mastery. Disciples gain solid defense and fortune.", "bonus": { "def": 4, "luck": 3 } }
+]

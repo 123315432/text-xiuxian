@@ -1,0 +1,7 @@
+[
+  { "id": "skill_breath_sword", "name": "吐纳剑诀", "nameEn": "Breath Sword Art", "cost": 12, "power": 1.0, "desc": "稳健出剑，附带小额吸气。", "descEn": "Steady swordplay with minor qi absorption.", "heal": 4 },
+  { "id": "skill_fire_palm", "name": "赤焰掌", "nameEn": "Crimson Flame Palm", "cost": 18, "power": 1.45, "desc": "爆发火劲，对敌造成高额伤害。", "descEn": "Explosive fire force dealing heavy damage." },
+  { "id": "skill_ice_mystic", "name": "玄冰指", "nameEn": "Mystic Ice Finger", "cost": 16, "power": 1.2, "desc": "寒气侵体，压制敌人行动。", "descEn": "Freezing cold that suppresses enemy actions.", "guard": 4 },
+  { "id": "skill_thunder_cut", "name": "雷煞斩", "nameEn": "Thunder Doom Slash", "cost": 24, "power": 1.75, "desc": "引雷入刃，强攻但耗灵更高。", "descEn": "Channels lightning into blade, powerful but costly." },
+  { "id": "skill_cloud_step", "name": "踏云步", "nameEn": "Cloud Stride", "cost": 10, "power": 0.75, "desc": "闪避更强，回合后回血。", "descEn": "Enhanced evasion with post-turn healing.", "heal": 10, "guard": 2 }
+]

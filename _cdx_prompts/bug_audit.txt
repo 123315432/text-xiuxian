@@ -1,0 +1,33 @@
+TASK: Audit text-xiuxian H5 game for bugs. Read source files and report issues. Do NOT modify any files.
+
+Use filesystem MCP read_text_file to read files directly at these exact paths:
+- D:/Code/text-xiuxian/src/types.ts
+- D:/Code/text-xiuxian/src/core/game.ts
+- D:/Code/text-xiuxian/src/core/gameData.ts
+- D:/Code/text-xiuxian/src/ui/app.ts
+- D:/Code/text-xiuxian/src/data/events.json
+- D:/Code/text-xiuxian/src/data/items.json
+- D:/Code/text-xiuxian/src/data/enemies.json
+- D:/Code/text-xiuxian/src/data/skills.json
+- D:/Code/text-xiuxian/src/data/realms.json
+
+Read them directly by path. Do NOT use search_files.
+
+AUDIT CHECKLIST:
+1. Data consistency: all item/skill/enemy IDs referenced in events.json must exist in items.json, skills.json, enemies.json
+2. Game loop: does explore() → rollEvent() → handleEventChoice() → tryBreakthrough() chain correctly?
+3. Battle: does runBattleAction() handle all 4 action types properly? Are there edge cases when battle ends?
+4. Skill item use: when useInventoryItem() is called on a skill that's already in learnedSkills, does it work?
+5. Save/load: does hydrateGame() correctly restore all state fields including battle, learnedSkills, equippedArtifacts?
+6. UI state machine: are there states where the UI can get stuck (modal can't be closed, buttons permanently disabled)?
+7. Edge cases: what happens when coin goes negative from event effect? when lifespan becomes 0 mid-battle? when enemy has 0 hp at battle start?
+8. Event effects: check all 50 events for invalid field names or values (hp should be reasonable, not -9999 etc)
+9. Missing item IDs: events reference item IDs via effect.item - are all referenced IDs present in items.json?
+10. Realm progression: is the breakthrough chain lianqi→jzhuji→jindan→yuanying→huashen→dacheng→dujie→feisheng complete and correct?
+
+After reading all files, output a concise bug report:
+- CRITICAL bugs (break gameplay)
+- MODERATE issues (bad UX, wrong data)
+- MINOR issues (polish, edge cases)
+
+Be specific: quote the relevant code or data, give line numbers or field names.

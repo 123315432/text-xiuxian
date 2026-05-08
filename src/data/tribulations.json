@@ -1,0 +1,41 @@
+[
+  {
+    "id": "trib_jindan",
+    "name": "金丹雷劫",
+    "nameEn": "Golden Core Tribulation",
+    "triggerRealm": "jindan",
+    "enemyHp": 200,
+    "enemyAtk": 25,
+    "enemyDef": 15,
+    "rewardExp": 80,
+    "rewardItem": "pill_break",
+    "desc": "九天雷霆降下，金丹雷劫已至！",
+    "descEn": "Nine Heavens thunder descends -- the Golden Core tribulation is here!"
+  },
+  {
+    "id": "trib_yuanying",
+    "name": "元婴心魔",
+    "nameEn": "Nascent Soul Heart Demon",
+    "triggerRealm": "yuanying",
+    "enemyHp": 400,
+    "enemyAtk": 45,
+    "enemyDef": 25,
+    "rewardExp": 150,
+    "rewardItem": "pill_longevity",
+    "desc": "心魔化形而出，元婴劫数将至！",
+    "descEn": "The heart demon manifests -- the Nascent Soul tribulation approaches!"
+  },
+  {
+    "id": "trib_huashen",
+    "name": "化神天火",
+    "nameEn": "Spirit Severing Heavenly Fire",
+    "triggerRealm": "huashen",
+    "enemyHp": 800,
+    "enemyAtk": 80,
+    "enemyDef": 45,
+    "rewardExp": 300,
+    "rewardItem": "pill_immortal",
+    "desc": "三昧真火焚天炼地，化神之劫降临！",
+    "descEn": "Samadhi True Fire scorches heaven and earth -- the Spirit Severing tribulation descends!"
+  }
+]

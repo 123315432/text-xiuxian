@@ -1,0 +1,2998 @@
+[
+  {
+    "id": "evt_ancient_tree",
+    "name": "古树灵光",
+    "nameEn": "Ancient Tree's Glow",
+    "text": "一株古树下，灵气缓缓旋转，似有机缘。",
+    "textEn": "Beneath an ancient tree, spiritual energy swirls gently — an opportunity awaits.",
+    "tags": ["修炼", "机缘"],
+    "choices": [
+      {
+        "label": "静坐参悟",
+        "labelEn": "Meditate",
+        "desc": "稳稳吸纳灵气。",
+        "descEn": "Steadily absorb spirit energy.",
+        "effect": {
+          "log": "你静坐树下，灵气入体。",
+          "logEn": "You sit beneath the tree as spirit energy flows into your body.",
+          "qi": 22,
+          "exp": 8,
+          "realmProgress": 6
+        }
+      },
+      {
+        "label": "斩树取宝",
+        "labelEn": "Cut the Tree",
+        "desc": "冒险搜刮，可能有收获。",
+        "descEn": "Risk a search — there may be treasure.",
+        "effect": {
+          "log": "你斩开树洞，摸到一枚旧储物袋。",
+          "logEn": "You split open the tree hollow and find an old storage pouch.",
+          "coin": 18,
+          "item": "pill_qi",
+          "hp": -6
+        }
+      },
+      {
+        "label": "转身离开",
+        "labelEn": "Walk Away",
+        "desc": "稳妥保守，不沾因果。",
+        "descEn": "Play it safe. Avoid karmic entanglement.",
+        "effect": {
+          "log": "你避开了这份机缘。",
+          "logEn": "You choose to pass on this opportunity.",
+          "lifespan": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_moon_lake",
+    "name": "月下灵湖",
+    "nameEn": "Moonlit Spirit Lake",
+    "text": "夜色清寒，湖面映月，灵气极盛。",
+    "textEn": "A cold night. Moonlight reflects on the lake, and the spirit energy is intense.",
+    "tags": ["修炼", "恢复"],
+    "choices": [
+      {
+        "label": "汲水炼气",
+        "labelEn": "Draw Water & Cultivate",
+        "desc": "恢复灵力。",
+        "descEn": "Restore spiritual power.",
+        "effect": {
+          "log": "月华入体，伤势平复。",
+          "logEn": "Moonlight enters your body, healing your wounds.",
+          "hp": 18,
+          "mp": 28,
+          "qi": 10
+        }
+      },
+      {
+        "label": "采湖心莲",
+        "labelEn": "Pick the Lake Lotus",
+        "desc": "有风险但可能得宝。",
+        "descEn": "Risky, but may yield a treasure.",
+        "effect": {
+          "log": "你摘得湖心莲。",
+          "logEn": "You pluck the lotus from the center of the lake.",
+          "item": "pill_heal",
+          "exp": 10,
+          "hp": -4
+        }
+      },
+      {
+        "label": "原地守夜",
+        "labelEn": "Keep Watch",
+        "desc": "增加安全感。",
+        "descEn": "Stay alert through the night.",
+        "effect": {
+          "log": "你安静守夜，平安无事。",
+          "logEn": "A quiet night passes without incident.",
+          "lifespan": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_bandit",
+    "name": "劫修拦路",
+    "nameEn": "Bandit Ambush",
+    "text": "一名劫修拦在山路中央，狞笑着要你交出丹药。",
+    "textEn": "A rogue cultivator blocks the mountain path, sneering and demanding your pills.",
+    "tags": ["战斗", "劫掠"],
+    "choices": [
+      {
+        "label": "拔剑迎战",
+        "labelEn": "Draw Sword & Fight",
+        "desc": "直接进入战斗。",
+        "descEn": "Engage in direct combat.",
+        "effect": {
+          "log": "你决定正面迎敌。",
+          "logEn": "You decide to face the enemy head-on.",
+          "battle": "sword_bandit",
+          "enemy": "sword_bandit"
+        }
+      },
+      {
+        "label": "交出灵石",
+        "labelEn": "Surrender Coins",
+        "desc": "花钱免灾。",
+        "descEn": "Pay your way out of trouble.",
+        "effect": {
+          "log": "你交出灵石，暂时脱身。",
+          "logEn": "You hand over spirit stones and escape for now.",
+          "coin": -14,
+          "lifespan": -1
+        }
+      },
+      {
+        "label": "偷袭先手",
+        "labelEn": "Sneak Attack",
+        "desc": "打一个措手不及。",
+        "descEn": "Catch them off guard.",
+        "effect": {
+          "log": "你抢先出手，剑气直逼其心口。",
+          "logEn": "You strike first — sword qi aimed right at the heart.",
+          "battle": "sword_bandit",
+          "enemy": "sword_bandit",
+          "qi": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_alchemy",
+    "name": "废丹炉",
+    "nameEn": "Abandoned Furnace",
+    "text": "一座废弃丹炉在山崖边嗡鸣，似有残丹。",
+    "textEn": "An abandoned pill furnace hums at the cliff edge. Remnant pills may linger within.",
+    "tags": ["丹药", "机缘"],
+    "choices": [
+      {
+        "label": "打开丹炉",
+        "labelEn": "Open the Furnace",
+        "desc": "试试手气。",
+        "descEn": "Try your luck.",
+        "effect": {
+          "log": "你翻出一枚残丹。",
+          "logEn": "You find a remnant pill inside.",
+          "item": "pill_break",
+          "exp": 14,
+          "hp": -5
+        }
+      },
+      {
+        "label": "点火重炼",
+        "labelEn": "Rekindle & Refine",
+        "desc": "消耗灵力尝试炼丹。",
+        "descEn": "Spend MP to attempt refinement.",
+        "effect": {
+          "log": "你勉强炼出聚气丹。",
+          "logEn": "You barely manage to refine a Qi Gathering Pill.",
+          "item": "pill_qi",
+          "mp": -12,
+          "exp": 8
+        }
+      },
+      {
+        "label": "一脚踹翻",
+        "labelEn": "Kick It Over",
+        "desc": "不碰陌生炉鼎。",
+        "descEn": "Don't mess with unknown furnaces.",
+        "effect": {
+          "log": "丹炉炸开一道黑烟。",
+          "logEn": "The furnace erupts in a plume of black smoke.",
+          "hp": -10,
+          "coin": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_inheritance",
+    "name": "残破传承",
+    "nameEn": "Ruined Legacy",
+    "text": "石壁上残留古老传承，字迹还可辨认。",
+    "textEn": "Ancient teachings linger on a stone wall, the inscriptions still legible.",
+    "tags": ["功法", "传承"],
+    "choices": [
+      {
+        "label": "全力参悟",
+        "labelEn": "Study Intensely",
+        "desc": "领悟技能。",
+        "descEn": "Comprehend the skill.",
+        "effect": {
+          "log": "你学会了踏云步。",
+          "logEn": "You master the Cloud Stride technique.",
+          "unlockSkill": "skill_cloud_step",
+          "exp": 20,
+          "qi": 14
+        }
+      },
+      {
+        "label": "刻印带走",
+        "labelEn": "Copy & Take",
+        "desc": "带回研究。",
+        "descEn": "Take a rubbing for later study.",
+        "effect": {
+          "log": "你刻下拓印，获得灵石奖励。",
+          "logEn": "You copy the inscription and receive spirit stones as reward.",
+          "coin": 20,
+          "item": "artifact_spirit_ring"
+        }
+      },
+      {
+        "label": "毁掉石壁",
+        "labelEn": "Destroy the Wall",
+        "desc": "不留后患。",
+        "descEn": "Leave no trace behind.",
+        "effect": {
+          "log": "你毁去痕迹，气机却反噬一瞬。",
+          "logEn": "You destroy the traces, but the energy backlashes briefly.",
+          "hp": -8,
+          "lifespan": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_pill_shop",
+    "name": "流动丹摊",
+    "nameEn": "Wandering Pill Stall",
+    "text": "街角出现一个神秘丹摊，价格忽高忽低。",
+    "textEn": "A mysterious pill stall appears at the street corner with fluctuating prices.",
+    "tags": ["商店", "丹药"],
+    "choices": [
+      {
+        "label": "买聚气丹",
+        "labelEn": "Buy Qi Pill",
+        "desc": "灵力回复。",
+        "descEn": "Restore MP.",
+        "effect": {
+          "log": "你买下聚气丹。",
+          "logEn": "You purchase a Qi Gathering Pill.",
+          "item": "pill_qi",
+          "coin": -10
+        }
+      },
+      {
+        "label": "买延寿丹",
+        "labelEn": "Buy Longevity Pill",
+        "desc": "延长寿元。",
+        "descEn": "Extend lifespan.",
+        "effect": {
+          "log": "你买下延寿丹。",
+          "logEn": "You purchase a Longevity Pill.",
+          "item": "pill_longevity",
+          "coin": -26
+        }
+      },
+      {
+        "label": "砍价离开",
+        "labelEn": "Haggle & Leave",
+        "desc": "碰碰运气。",
+        "descEn": "Try your bargaining luck.",
+        "effect": {
+          "log": "你白得一瓶回春丹。",
+          "logEn": "You walk away with a free Rejuvenation Pill.",
+          "item": "pill_heal",
+          "coin": -4,
+          "exp": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_thunder_cloud",
+    "name": "乌云压顶",
+    "nameEn": "Thunderclouds Descend",
+    "text": "天色骤变，云中已有雷意翻滚。",
+    "textEn": "The sky darkens suddenly. Thunder intent roils within the clouds.",
+    "tags": ["天劫", "危险"],
+    "minRealm": "dacheng",
+    "choices": [
+      {
+        "label": "就地引雷",
+        "labelEn": "Attract the Lightning",
+        "desc": "主动迎接劫数。",
+        "descEn": "Actively embrace the tribulation.",
+        "effect": {
+          "log": "你直面雷云，试图借劫淬体。",
+          "logEn": "You face the storm, trying to temper your body with tribulation lightning.",
+          "battle": "thunder_guard",
+          "enemy": "thunder_guard",
+          "breakChance": 10
+        }
+      },
+      {
+        "label": "布阵防护",
+        "labelEn": "Deploy Barriers",
+        "desc": "降低伤害。",
+        "descEn": "Reduce incoming damage.",
+        "effect": {
+          "log": "你撑起护阵，稳住心神。",
+          "logEn": "You raise a protective formation, steadying your mind.",
+          "mp": -20,
+          "hp": 12,
+          "realmProgress": 8
+        }
+      },
+      {
+        "label": "遁入山洞",
+        "labelEn": "Flee to a Cave",
+        "desc": "暂避雷云。",
+        "descEn": "Take shelter from the storm.",
+        "effect": {
+          "log": "你躲过一劫，却失了机缘。",
+          "logEn": "You survive the tribulation but miss an opportunity.",
+          "lifespan": -3,
+          "qi": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_spirit_beast",
+    "name": "灵兽幼崽",
+    "nameEn": "Spirit Beast Cub",
+    "text": "一只受伤的灵兽幼崽蜷缩在石缝中。",
+    "textEn": "A wounded spirit beast cub huddles in a crevice between rocks.",
+    "tags": ["灵兽", "善缘"],
+    "choices": [
+      {
+        "label": "喂它丹药",
+        "labelEn": "Feed It a Pill",
+        "desc": "结下一段善缘。",
+        "descEn": "Form a karmic bond.",
+        "effect": {
+          "log": "灵兽记住了你的气息。",
+          "logEn": "The spirit beast remembers your scent.",
+          "lifespan": 4,
+          "exp": 12,
+          "item": "artifact_iron_amulet"
+        }
+      },
+      {
+        "label": "契约收服",
+        "labelEn": "Bind a Contract",
+        "desc": "冒险尝试契约。",
+        "descEn": "Risk attempting a soul contract.",
+        "effect": {
+          "log": "你成功收服灵兽气息。",
+          "logEn": "You successfully bind the beast's essence.",
+          "coin": 20,
+          "qi": 18,
+          "item": "skill_breath_sword"
+        }
+      },
+      {
+        "label": "无视离开",
+        "labelEn": "Ignore & Leave",
+        "desc": "不沾麻烦。",
+        "descEn": "Avoid complications.",
+        "effect": {
+          "log": "你转身离开。",
+          "logEn": "You turn and walk away.",
+          "lifespan": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_ruin_gate",
+    "name": "古门遗址",
+    "nameEn": "Ancient Gate Ruins",
+    "text": "古门半开，里面的灵压令人心悸。",
+    "textEn": "The ancient gate stands half-open. The spiritual pressure within is suffocating.",
+    "tags": ["秘境", "战斗"],
+    "choices": [
+      {
+        "label": "踏入遗址",
+        "labelEn": "Enter the Ruins",
+        "desc": "可能遇敌。",
+        "descEn": "Enemies may lurk within.",
+        "effect": {
+          "log": "你踏入古门遗址。",
+          "logEn": "You step through the ancient gate.",
+          "battle": "corpse_puppet",
+          "enemy": "corpse_puppet"
+        }
+      },
+      {
+        "label": "以符探路",
+        "labelEn": "Scout with Talismans",
+        "desc": "先消耗一些资源。",
+        "descEn": "Spend resources to scout ahead.",
+        "effect": {
+          "log": "你以符探路，摸到秘藏。",
+          "logEn": "Your talismans reveal a hidden cache.",
+          "item": "artifact_flying_sword",
+          "mp": -8,
+          "exp": 14
+        }
+      },
+      {
+        "label": "封门退走",
+        "labelEn": "Seal & Retreat",
+        "desc": "稳一手。",
+        "descEn": "Play it safe.",
+        "effect": {
+          "log": "你封住古门，保住性命。",
+          "logEn": "You seal the gate and preserve your life.",
+          "hp": 8,
+          "lifespan": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_meditation",
+    "name": "静室入定",
+    "nameEn": "Meditation Chamber",
+    "text": "一间无主静室可供修行。",
+    "textEn": "An ownerless meditation chamber is available for cultivation.",
+    "tags": ["修炼", "稳定"],
+    "choices": [
+      {
+        "label": "长坐三日",
+        "labelEn": "Meditate 3 Days",
+        "desc": "大幅提升修炼点。",
+        "descEn": "Greatly boost cultivation progress.",
+        "effect": {
+          "log": "你在静室内稳步吐纳。",
+          "logEn": "You cultivate steadily in the meditation chamber.",
+          "qi": 30,
+          "realmProgress": 10,
+          "mp": 18
+        }
+      },
+      {
+        "label": "开炉炼体",
+        "labelEn": "Body Tempering",
+        "desc": "提升基础属性。",
+        "descEn": "Improve base stats.",
+        "effect": {
+          "log": "你熬炼筋骨，气血更稳。",
+          "logEn": "You temper your body. Vitality stabilizes.",
+          "hp": 20,
+          "atk": 3,
+          "def": 2
+        }
+      },
+      {
+        "label": "搜查暗格",
+        "labelEn": "Search Secret Compartment",
+        "desc": "碰碰运气。",
+        "descEn": "Try your luck.",
+        "effect": {
+          "log": "暗格里压着半卷残篇。",
+          "logEn": "A half-scroll lies hidden in the compartment.",
+          "item": "skill_ice_mystic",
+          "coin": 12
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_spirit_well",
+    "name": "灵泉喷涌",
+    "nameEn": "Spirit Spring Eruption",
+    "text": "地下灵泉破土而出，水汽氤氲。",
+    "textEn": "An underground spirit spring bursts forth, mist rising into the air.",
+    "tags": ["修炼", "恢复"],
+    "choices": [
+      {
+        "label": "直接沐浴",
+        "labelEn": "Bathe in the Spring",
+        "desc": "大量恢复。",
+        "descEn": "Massive recovery.",
+        "effect": {
+          "log": "灵泉洗去疲惫。",
+          "logEn": "The spirit spring washes away your exhaustion.",
+          "hp": 24,
+          "mp": 22,
+          "qi": 12
+        }
+      },
+      {
+        "label": "收集灵泉",
+        "labelEn": "Collect the Spring Water",
+        "desc": "带走部分灵液。",
+        "descEn": "Take some spirit liquid with you.",
+        "effect": {
+          "log": "你收集了一瓶灵泉。",
+          "logEn": "You bottle some spirit spring water.",
+          "item": "pill_qi",
+          "exp": 8
+        }
+      },
+      {
+        "label": "布阵封泉",
+        "labelEn": "Seal the Spring",
+        "desc": "稳妥处理。",
+        "descEn": "Handle with caution.",
+        "effect": {
+          "log": "你封住灵泉，获得一丝稳定机缘。",
+          "logEn": "You seal the spring, gaining a steady stream of fortune.",
+          "realmProgress": 8,
+          "lifespan": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_stone_pavilion",
+    "name": "石亭论道",
+    "nameEn": "Dao Discussion at the Pavilion",
+    "text": "一位看不清面目的老者邀你论道。",
+    "textEn": "An enigmatic elder invites you to discuss the Dao.",
+    "tags": ["机缘", "修炼"],
+    "choices": [
+      {
+        "label": "虚心请教",
+        "labelEn": "Humbly Seek Guidance",
+        "desc": "增长修为。",
+        "descEn": "Gain cultivation insight.",
+        "effect": {
+          "log": "你在论道中获益匪浅。",
+          "logEn": "You gain great insight from the discussion.",
+          "exp": 18,
+          "qi": 16,
+          "realmProgress": 10
+        }
+      },
+      {
+        "label": "直言质疑",
+        "labelEn": "Challenge Directly",
+        "desc": "冒险一问。",
+        "descEn": "Risk a bold question.",
+        "effect": {
+          "log": "老者大笑，传你一式剑诀。",
+          "logEn": "The elder laughs heartily and teaches you a sword technique.",
+          "item": "skill_fire_palm",
+          "coin": 6
+        }
+      },
+      {
+        "label": "沉默作揖",
+        "labelEn": "Bow Silently",
+        "desc": "礼数周全。",
+        "descEn": "Show proper respect.",
+        "effect": {
+          "log": "老者点头离去。",
+          "logEn": "The elder nods and departs.",
+          "lifespan": 1,
+          "luck": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_dark_market",
+    "name": "夜市黑摊",
+    "nameEn": "Night Market Black Stall",
+    "text": "黑市摊位上摆着来路不明的法宝。",
+    "textEn": "The black market stall displays artifacts of unknown origin.",
+    "tags": ["商店", "法宝"],
+    "choices": [
+      {
+        "label": "买飞剑",
+        "labelEn": "Buy Flying Sword",
+        "desc": "强化攻击。",
+        "descEn": "Boost your offense.",
+        "effect": {
+          "log": "你买下飞剑。",
+          "logEn": "You purchase the flying sword.",
+          "item": "artifact_flying_sword",
+          "coin": -34
+        }
+      },
+      {
+        "label": "买护符",
+        "labelEn": "Buy Amulet",
+        "desc": "加强生存。",
+        "descEn": "Improve survivability.",
+        "effect": {
+          "log": "你买下护符。",
+          "logEn": "You purchase the amulet.",
+          "item": "artifact_iron_amulet",
+          "coin": -16
+        }
+      },
+      {
+        "label": "砍价试探",
+        "labelEn": "Haggle",
+        "desc": "可能翻车。",
+        "descEn": "Might backfire.",
+        "effect": {
+          "log": "黑摊收了你的灵石，还丢给你一枚残丹。",
+          "logEn": "The dealer takes your coins and tosses you a leftover pill.",
+          "item": "pill_break",
+          "coin": -8,
+          "hp": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_ancient_medal",
+    "name": "古碑铭文",
+    "nameEn": "Ancient Stele Inscription",
+    "text": "一块古碑上刻着模糊的铭文。",
+    "textEn": "An ancient stele bears faded inscriptions.",
+    "tags": ["传承", "机缘"],
+    "choices": [
+      {
+        "label": "拓印铭文",
+        "labelEn": "Make a Rubbing",
+        "desc": "留作研究。",
+        "descEn": "Keep for research.",
+        "effect": {
+          "log": "你带走了古碑拓本。",
+          "logEn": "You take a rubbing of the stele.",
+          "item": "skill_thunder_cut",
+          "exp": 12
+        }
+      },
+      {
+        "label": "当场参悟",
+        "labelEn": "Comprehend on the Spot",
+        "desc": "直接领会。",
+        "descEn": "Try to understand immediately.",
+        "effect": {
+          "log": "你悟出部分雷法。",
+          "logEn": "You grasp fragments of the thunder art.",
+          "atk": 4,
+          "spirit": 2,
+          "qi": 10
+        }
+      },
+      {
+        "label": "向碑致礼",
+        "labelEn": "Pay Respects",
+        "desc": "稳守心神。",
+        "descEn": "Maintain inner peace.",
+        "effect": {
+          "log": "古碑微光闪烁。",
+          "logEn": "The stele glimmers faintly.",
+          "lifespan": 2,
+          "realmProgress": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_sky_fall",
+    "name": "流星坠地",
+    "nameEn": "Fallen Meteor",
+    "text": "一颗流星坠入山谷，残留灼热气息。",
+    "textEn": "A meteor crashes into the valley, leaving scorching traces.",
+    "tags": ["机缘", "危险"],
+    "choices": [
+      {
+        "label": "追入山谷",
+        "labelEn": "Chase into the Valley",
+        "desc": "可能捡宝。",
+        "descEn": "There might be treasure.",
+        "effect": {
+          "log": "你捡到一件残破法器。",
+          "logEn": "You find a broken artifact.",
+          "item": "artifact_spirit_ring",
+          "hp": -8
+        }
+      },
+      {
+        "label": "收集陨铁",
+        "labelEn": "Collect Meteoric Iron",
+        "desc": "强化自身。",
+        "descEn": "Strengthen yourself.",
+        "effect": {
+          "log": "你淬炼出一点陨铁精华。",
+          "logEn": "You refine a bit of meteoric iron essence.",
+          "atk": 2,
+          "def": 2,
+          "exp": 10
+        }
+      },
+      {
+        "label": "远远观望",
+        "labelEn": "Watch from Afar",
+        "desc": "保守行事。",
+        "descEn": "Play it safe.",
+        "effect": {
+          "log": "你平稳避开危险。",
+          "logEn": "You safely avoid the danger.",
+          "lifespan": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_rotten_bridge",
+    "name": "腐桥断流",
+    "nameEn": "Rotting Bridge",
+    "text": "一座破桥横跨黑水，脚下极不稳当。",
+    "textEn": "A crumbling bridge spans dark waters. The footing is treacherous.",
+    "tags": ["危险", "生存"],
+    "choices": [
+      {
+        "label": "飞身跃过",
+        "labelEn": "Leap Across",
+        "desc": "冒险前进。",
+        "descEn": "Risk a bold jump.",
+        "effect": {
+          "log": "你险险跃过断桥。",
+          "logEn": "You barely leap across the broken bridge.",
+          "hp": -10,
+          "exp": 8,
+          "qi": 8
+        }
+      },
+      {
+        "label": "修桥再过",
+        "labelEn": "Repair Then Cross",
+        "desc": "耗时但安全。",
+        "descEn": "Time-consuming but safe.",
+        "effect": {
+          "log": "你修好断桥。",
+          "logEn": "You repair the bridge.",
+          "lifespan": -1,
+          "realmProgress": 8
+        }
+      },
+      {
+        "label": "寻找渡船",
+        "labelEn": "Find a Ferry",
+        "desc": "节省体力。",
+        "descEn": "Conserve your energy.",
+        "effect": {
+          "log": "你找到一艘旧渡船，拿到些许灵石。",
+          "logEn": "You find an old ferry and pick up a few spirit stones.",
+          "coin": 14
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_wandering_swordman",
+    "name": "游侠剑修",
+    "nameEn": "Wandering Swordsman",
+    "text": "一名孤身剑修与你擦肩，似要传你一招。",
+    "textEn": "A lone sword cultivator brushes past you, seeming willing to teach a move.",
+    "tags": ["功法", "机缘"],
+    "choices": [
+      {
+        "label": "请他指点",
+        "labelEn": "Ask for Guidance",
+        "desc": "获得技能。",
+        "descEn": "Learn a skill.",
+        "effect": {
+          "log": "你学得踏云步。",
+          "logEn": "You learn the Cloud Stride.",
+          "unlockSkill": "skill_cloud_step",
+          "exp": 10
+        }
+      },
+      {
+        "label": "与他切磋",
+        "labelEn": "Spar with Him",
+        "desc": "可能受伤。",
+        "descEn": "You might get hurt.",
+        "effect": {
+          "log": "你虽受伤，却也磨砺了剑意。",
+          "logEn": "Wounded but with sharpened sword intent.",
+          "hp": -10,
+          "atk": 3,
+          "qi": 12
+        }
+      },
+      {
+        "label": "送他灵石",
+        "labelEn": "Gift Spirit Stones",
+        "desc": "结善缘。",
+        "descEn": "Build good karma.",
+        "effect": {
+          "log": "剑修收下灵石后赠你一瓶丹药。",
+          "logEn": "The swordsman accepts your coins and gifts you a pill.",
+          "item": "pill_heal",
+          "coin": -8,
+          "luck": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_falling_stars",
+    "name": "坠星残阵",
+    "nameEn": "Fallen Star Formation",
+    "text": "天外星芒落下，地面浮现残阵。",
+    "textEn": "Starlight falls from beyond, revealing a residual formation on the ground.",
+    "tags": ["传承", "修炼"],
+    "choices": [
+      {
+        "label": "破阵取材",
+        "labelEn": "Break Formation for Materials",
+        "desc": "得到材料。",
+        "descEn": "Obtain materials.",
+        "effect": {
+          "log": "你取走了残阵核心。",
+          "logEn": "You extract the formation core.",
+          "item": "artifact_spirit_ring",
+          "exp": 12
+        }
+      },
+      {
+        "label": "原地参悟",
+        "labelEn": "Study the Formation",
+        "desc": "获得修为。",
+        "descEn": "Gain cultivation insight.",
+        "effect": {
+          "log": "残阵被你看出门道。",
+          "logEn": "You discern the formation's secrets.",
+          "realmProgress": 14,
+          "qi": 12
+        }
+      },
+      {
+        "label": "毁阵离开",
+        "labelEn": "Destroy & Leave",
+        "desc": "保守行动。",
+        "descEn": "Conservative approach.",
+        "effect": {
+          "log": "你毁去残阵，却惊出一缕寒气。",
+          "logEn": "You destroy the formation, but a cold wisp escapes.",
+          "hp": -6,
+          "lifespan": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_herb_valley",
+    "name": "药谷采药",
+    "nameEn": "Herb Valley Gathering",
+    "text": "一片灵草遍地的山谷静静敞开。",
+    "textEn": "A valley covered with spirit herbs lies open before you.",
+    "tags": ["丹药", "机缘"],
+    "choices": [
+      {
+        "label": "采集灵草",
+        "labelEn": "Gather Herbs",
+        "desc": "得到丹药。",
+        "descEn": "Obtain pills.",
+        "effect": {
+          "log": "你采到几株灵草。",
+          "logEn": "You harvest several spirit herbs.",
+          "item": "pill_heal",
+          "exp": 8
+        }
+      },
+      {
+        "label": "深谷探秘",
+        "labelEn": "Explore the Depths",
+        "desc": "额外风险。",
+        "descEn": "Additional risk.",
+        "effect": {
+          "log": "你在谷底找到破境丹。",
+          "logEn": "You find a Breakthrough Pill deep in the valley.",
+          "item": "pill_break",
+          "hp": -6
+        }
+      },
+      {
+        "label": "就地炼丹",
+        "labelEn": "Refine Pills On-Site",
+        "desc": "消耗时间。",
+        "descEn": "Costs time.",
+        "effect": {
+          "log": "你炼成一瓶聚气丹。",
+          "logEn": "You refine a Qi Gathering Pill.",
+          "item": "pill_qi",
+          "lifespan": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_crystal_cave",
+    "name": "晶石洞府",
+    "nameEn": "Crystal Cave Dwelling",
+    "text": "洞中墙壁镶满灵晶，适合闭关。",
+    "textEn": "The cave walls are studded with spirit crystals — perfect for seclusion.",
+    "tags": ["修炼", "恢复"],
+    "choices": [
+      {
+        "label": "闭关三日",
+        "labelEn": "Secluded Cultivation",
+        "desc": "强化内息。",
+        "descEn": "Strengthen inner energy.",
+        "effect": {
+          "log": "你在洞中苦修。",
+          "logEn": "You cultivate intensely in the cave.",
+          "qi": 26,
+          "realmProgress": 12,
+          "mp": 18
+        }
+      },
+      {
+        "label": "凿晶带走",
+        "labelEn": "Mine Crystals",
+        "desc": "更注重资源。",
+        "descEn": "Prioritize resources.",
+        "effect": {
+          "log": "你带走几块灵晶。",
+          "logEn": "You take several spirit crystals.",
+          "coin": 24,
+          "item": "pill_qi"
+        }
+      },
+      {
+        "label": "留字离开",
+        "labelEn": "Leave a Mark & Go",
+        "desc": "求个心安。",
+        "descEn": "For peace of mind.",
+        "effect": {
+          "log": "你留下道号，灵光微闪。",
+          "logEn": "You leave your Dao name. A faint glow responds.",
+          "lifespan": 2,
+          "luck": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_knot_spirit",
+    "name": "结缘灵藤",
+    "nameEn": "Spirit Vine Bond",
+    "text": "一株灵藤缠住了你的脚踝，似在求助。",
+    "textEn": "A spirit vine wraps around your ankle, seemingly asking for help.",
+    "tags": ["灵植", "善缘"],
+    "choices": [
+      {
+        "label": "滴血相助",
+        "labelEn": "Offer Blood",
+        "desc": "可能有回报。",
+        "descEn": "May be rewarded.",
+        "effect": {
+          "log": "灵藤回赠一枚护符。",
+          "logEn": "The vine gifts you an amulet in return.",
+          "item": "artifact_iron_amulet",
+          "hp": -4,
+          "lifespan": 4
+        }
+      },
+      {
+        "label": "割断灵藤",
+        "labelEn": "Cut the Vine",
+        "desc": "快速脱身。",
+        "descEn": "Free yourself quickly.",
+        "effect": {
+          "log": "灵藤断裂，你拾得一点灵液。",
+          "logEn": "The vine snaps. You collect a drop of spirit liquid.",
+          "mp": 16,
+          "coin": 8
+        }
+      },
+      {
+        "label": "静候其变",
+        "labelEn": "Wait & Observe",
+        "desc": "观察情况。",
+        "descEn": "See what happens.",
+        "effect": {
+          "log": "灵藤沉入土中，留下丹香。",
+          "logEn": "The vine sinks into the earth, leaving behind the scent of pills.",
+          "item": "pill_longevity"
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_wind_cliff",
+    "name": "风崖试炼",
+    "nameEn": "Wind Cliff Trial",
+    "text": "高崖风大，适合磨砺心性。",
+    "textEn": "Strong winds atop the cliff — perfect for tempering one's resolve.",
+    "tags": ["修炼", "危险"],
+    "choices": [
+      {
+        "label": "迎风打坐",
+        "labelEn": "Meditate in the Wind",
+        "desc": "提升修为。",
+        "descEn": "Boost cultivation.",
+        "effect": {
+          "log": "你在狂风中稳住心神。",
+          "logEn": "You steady your mind against the raging wind.",
+          "qi": 18,
+          "realmProgress": 8,
+          "hp": -6
+        }
+      },
+      {
+        "label": "顺势练剑",
+        "labelEn": "Practice Swordplay",
+        "desc": "提升攻击。",
+        "descEn": "Boost ATK.",
+        "effect": {
+          "log": "你借风势练剑。",
+          "logEn": "You practice swordplay with the wind.",
+          "atk": 4,
+          "exp": 10
+        }
+      },
+      {
+        "label": "下崖寻洞",
+        "labelEn": "Climb Down to Find a Cave",
+        "desc": "碰碰机缘。",
+        "descEn": "Seek fortune below.",
+        "effect": {
+          "log": "你找到一处避风洞，收获一枚丹药。",
+          "logEn": "You find a sheltered cave and a pill within.",
+          "item": "pill_heal",
+          "lifespan": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_riverboat",
+    "name": "摆渡老翁",
+    "nameEn": "The Old Ferryman",
+    "text": "一名摆渡老翁要求你帮他渡河。",
+    "textEn": "An old ferryman asks for your help crossing the river.",
+    "tags": ["剧情", "机缘"],
+    "choices": [
+      {
+        "label": "帮忙摆渡",
+        "labelEn": "Help Him Cross",
+        "desc": "获得回报。",
+        "descEn": "Receive a reward.",
+        "effect": {
+          "log": "老翁送你一只灵葫芦。",
+          "logEn": "The old man gives you a spirit gourd.",
+          "item": "pill_qi",
+          "coin": 6,
+          "lifespan": 2
+        }
+      },
+      {
+        "label": "付费过河",
+        "labelEn": "Pay the Fare",
+        "desc": "节省时间。",
+        "descEn": "Save time.",
+        "effect": {
+          "log": "你平安渡河。",
+          "logEn": "You cross the river safely.",
+          "coin": -5,
+          "exp": 4
+        }
+      },
+      {
+        "label": "婉拒离开",
+        "labelEn": "Politely Decline",
+        "desc": "没有代价。",
+        "descEn": "No cost involved.",
+        "effect": {
+          "log": "你向老翁告辞。",
+          "logEn": "You bid the old man farewell.",
+          "lifespan": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_wraith_whisper",
+    "name": "鬼魅低语",
+    "nameEn": "Wraith's Whisper",
+    "text": "耳边忽然响起低语，似有怨灵窥视。",
+    "textEn": "A sudden whisper reaches your ears — a wraith seems to be watching.",
+    "tags": ["危险", "天劫"],
+    "minRealm": "jindan",
+    "choices": [
+      {
+        "label": "强行镇压",
+        "labelEn": "Suppress by Force",
+        "desc": "可能反噬。",
+        "descEn": "Might backlash.",
+        "effect": {
+          "log": "你镇住怨气。",
+          "logEn": "You suppress the resentful energy.",
+          "hp": -10,
+          "qi": 14,
+          "realmProgress": 8
+        }
+      },
+      {
+        "label": "引魂超度",
+        "labelEn": "Guide the Spirit",
+        "desc": "提升寿元。",
+        "descEn": "Extend lifespan.",
+        "effect": {
+          "log": "怨灵散去，你获得一段寿元。",
+          "logEn": "The wraith dissipates, granting you extra lifespan.",
+          "lifespan": 6,
+          "exp": 12
+        }
+      },
+      {
+        "label": "祭出法宝",
+        "labelEn": "Deploy Artifact",
+        "desc": "消耗资源。",
+        "descEn": "Spend resources.",
+        "effect": {
+          "log": "法宝震散怨气。",
+          "logEn": "Your artifact shatters the resentful energy.",
+          "item": "artifact_iron_amulet",
+          "mp": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_wandering_monk",
+    "name": "云游僧人",
+    "nameEn": "Wandering Monk",
+    "text": "一位身披破袈裟的僧人拦下你，说能看出你的命数。",
+    "textEn": "A monk in tattered robes stops you, claiming to see your fate.",
+    "tags": ["剧情", "机缘"],
+    "choices": [
+      {
+        "label": "请他指点",
+        "labelEn": "Ask for Guidance",
+        "desc": "听听天机。",
+        "descEn": "Hear the secrets of heaven.",
+        "effect": {
+          "log": "僧人轻叹，赠你一枚护身符。",
+          "logEn": "The monk sighs softly and gives you a protective charm.",
+          "item": "artifact_iron_amulet",
+          "lifespan": 2
+        }
+      },
+      {
+        "label": "施舍灵石",
+        "labelEn": "Donate Spirit Stones",
+        "desc": "结下善缘。",
+        "descEn": "Build good karma.",
+        "effect": {
+          "log": "僧人合掌，你感到气机清明。",
+          "logEn": "The monk clasps his hands in prayer. Your mind clears.",
+          "coin": -8,
+          "mp": 20,
+          "luck": 1
+        }
+      },
+      {
+        "label": "绕道离开",
+        "labelEn": "Take a Detour",
+        "desc": "不沾因果。",
+        "descEn": "Avoid karmic ties.",
+        "effect": {
+          "log": "你绕开僧人，莫名感到一丝惋惜。",
+          "logEn": "You walk around the monk, feeling a faint sense of regret.",
+          "lifespan": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_frozen_spring",
+    "name": "冻泉破冰",
+    "nameEn": "Frozen Spring",
+    "text": "一处山泉被寒气封冻，冰层下隐约有光。",
+    "textEn": "A mountain spring is frozen over. Something glows faintly beneath the ice.",
+    "tags": ["机缘", "危险"],
+    "choices": [
+      {
+        "label": "破冰取宝",
+        "labelEn": "Break Ice for Treasure",
+        "desc": "可能有收获。",
+        "descEn": "There might be a find.",
+        "effect": {
+          "log": "你破冰取出一枚残损法器。",
+          "logEn": "You break through the ice and retrieve a damaged artifact.",
+          "item": "artifact_spirit_ring",
+          "hp": -8
+        }
+      },
+      {
+        "label": "以掌融化",
+        "labelEn": "Melt with Qi Palm",
+        "desc": "消耗灵力。",
+        "descEn": "Spend MP.",
+        "effect": {
+          "log": "寒气入体，但泉水清澈，灵力回升。",
+          "logEn": "Cold invades your body, but the spring water is pure. Qi rises.",
+          "mp": -10,
+          "qi": 20,
+          "hp": -4
+        }
+      },
+      {
+        "label": "留待天晴",
+        "labelEn": "Wait for a Thaw",
+        "desc": "保守行事。",
+        "descEn": "Play it safe.",
+        "effect": {
+          "log": "你选择离去，寒意随风散。",
+          "logEn": "You choose to leave. The chill fades with the wind.",
+          "lifespan": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_spirit_mushroom",
+    "name": "千年灵菇",
+    "nameEn": "Millennium Spirit Mushroom",
+    "text": "巨石下长着一株通体发光的巨型灵菇，孢子飘散在空气中。",
+    "textEn": "A massive glowing mushroom grows beneath a boulder, its spores drifting in the air.",
+    "tags": ["丹药", "机缘"],
+    "choices": [
+      {
+        "label": "整株采下",
+        "labelEn": "Harvest Whole",
+        "desc": "可能有副作用。",
+        "descEn": "May have side effects.",
+        "effect": {
+          "log": "孢子入体，神识一阵晕眩，随后感到无比清明。",
+          "logEn": "Spores enter your body — brief dizziness, then extraordinary clarity.",
+          "qi": 24,
+          "mp": 20,
+          "hp": -6
+        }
+      },
+      {
+        "label": "摘取一片",
+        "labelEn": "Take a Piece",
+        "desc": "稳妥收获。",
+        "descEn": "Safe harvest.",
+        "effect": {
+          "log": "你小心取下一片，炼成丹药。",
+          "logEn": "You carefully take a piece and refine it into a pill.",
+          "item": "pill_qi",
+          "exp": 8
+        }
+      },
+      {
+        "label": "拍下孢子",
+        "labelEn": "Collect Spores",
+        "desc": "另辟蹊径。",
+        "descEn": "An unconventional approach.",
+        "effect": {
+          "log": "孢子结成粉末，你搜集了数份。",
+          "logEn": "The spores form a powder. You collect several portions.",
+          "item": "pill_break",
+          "lifespan": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_iron_furnace",
+    "name": "铸剑余炉",
+    "nameEn": "Remnant Sword Forge",
+    "text": "一座无主铸剑炉还有余温，地上散落着铁屑与符文残片。",
+    "textEn": "An ownerless sword forge still radiates warmth. Iron shavings and rune fragments litter the ground.",
+    "tags": ["传承", "法宝"],
+    "choices": [
+      {
+        "label": "淬炼自身",
+        "labelEn": "Temper Yourself",
+        "desc": "借炉火强化。",
+        "descEn": "Use the forge fire to strengthen yourself.",
+        "effect": {
+          "log": "炉火熔炼，你的气血与攻势都有所增强。",
+          "logEn": "The forge fire tempers you. Both vitality and offense improve.",
+          "atk": 3,
+          "hp": -12,
+          "exp": 10
+        }
+      },
+      {
+        "label": "拼凑符文",
+        "labelEn": "Piece Together Runes",
+        "desc": "尝试参悟。",
+        "descEn": "Try to comprehend.",
+        "effect": {
+          "log": "你从残片中悟出一丝剑意。",
+          "logEn": "You glean a trace of sword intent from the fragments.",
+          "unlockSkill": "skill_breath_sword",
+          "exp": 14
+        }
+      },
+      {
+        "label": "搜刮炉灰",
+        "labelEn": "Scavenge Ashes",
+        "desc": "务实取利。",
+        "descEn": "Practical gains.",
+        "effect": {
+          "log": "炉灰中混着几枚灵石。",
+          "logEn": "A few spirit stones are mixed in the furnace ashes.",
+          "coin": 18,
+          "mp": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_crow_omen",
+    "name": "乌鸦示警",
+    "nameEn": "Crow's Omen",
+    "text": "一只通体乌黑的神鸦落在你肩上，喙中衔着一片残损竹简。",
+    "textEn": "A jet-black divine crow lands on your shoulder, a tattered bamboo slip in its beak.",
+    "tags": ["机缘", "剧情"],
+    "choices": [
+      {
+        "label": "展开竹简",
+        "labelEn": "Unfurl the Scroll",
+        "desc": "一探究竟。",
+        "descEn": "Investigate further.",
+        "effect": {
+          "log": "竹简上只有八个字：死生有命，莫逆天数。",
+          "logEn": "Eight words on the scroll: Life and death are fated — defy not the heavens.",
+          "lifespan": 6,
+          "luck": 1
+        }
+      },
+      {
+        "label": "驱鸦赶走",
+        "labelEn": "Shoo the Crow",
+        "desc": "不沾妖气。",
+        "descEn": "Avoid demonic aura.",
+        "effect": {
+          "log": "乌鸦振翅而去，地上留下几枚灵石。",
+          "logEn": "The crow takes flight, leaving a few spirit stones on the ground.",
+          "coin": 12,
+          "realmProgress": 4
+        }
+      },
+      {
+        "label": "收下竹简",
+        "labelEn": "Keep the Scroll",
+        "desc": "留作研究。",
+        "descEn": "Keep for study.",
+        "effect": {
+          "log": "竹简自燃，你悟出一丝天道气息。",
+          "logEn": "The scroll self-immolates. You glimpse a fragment of heavenly law.",
+          "realmProgress": 12,
+          "exp": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_abandoned_shrine",
+    "name": "无人神祠",
+    "nameEn": "Abandoned Shrine",
+    "text": "荒野中一座小祠无人祭拜，神像面目模糊，香炉里还有半截残香。",
+    "textEn": "A small shrine stands forgotten in the wilderness. The idol's face is worn; half an incense stick remains.",
+    "tags": ["剧情", "善缘"],
+    "choices": [
+      {
+        "label": "点燃残香",
+        "labelEn": "Light the Incense",
+        "desc": "祭拜神明。",
+        "descEn": "Pay respects to the deity.",
+        "effect": {
+          "log": "香烟升起，你莫名感到一段寿元回流。",
+          "logEn": "Smoke rises. You inexplicably feel your lifespan extending.",
+          "lifespan": 5,
+          "luck": 1
+        }
+      },
+      {
+        "label": "翻找供品",
+        "labelEn": "Search Offerings",
+        "desc": "搜刮一番。",
+        "descEn": "Rummage through the offerings.",
+        "effect": {
+          "log": "供品早已腐烂，只有一枚古铜符。",
+          "logEn": "The offerings have long rotted. Only an ancient bronze talisman remains.",
+          "item": "artifact_iron_amulet",
+          "luck": -1,
+          "hp": -4
+        }
+      },
+      {
+        "label": "修缮香炉",
+        "labelEn": "Repair the Censer",
+        "desc": "积一段善缘。",
+        "descEn": "Accumulate good karma.",
+        "effect": {
+          "log": "神祠显出淡淡金光，你体内气机顺畅。",
+          "logEn": "The shrine emits a faint golden glow. Your qi flows smoothly.",
+          "qi": 16,
+          "mp": 14,
+          "exp": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_mirror_pool",
+    "name": "镜面幽潭",
+    "nameEn": "Mirror Pool",
+    "text": "潭水平静如镜，倒映出一个与你相似却身着仙衣的影像。",
+    "textEn": "The pool is still as a mirror, reflecting an image of you in immortal robes.",
+    "tags": ["机缘", "修炼"],
+    "choices": [
+      {
+        "label": "凝视影像",
+        "labelEn": "Gaze at the Reflection",
+        "desc": "尝试领悟。",
+        "descEn": "Try to comprehend.",
+        "effect": {
+          "log": "影像触动了你对上境的感知，修为微动。",
+          "logEn": "The vision stirs your perception of the next realm.",
+          "realmProgress": 14,
+          "qi": 18
+        }
+      },
+      {
+        "label": "投石入潭",
+        "labelEn": "Throw a Stone",
+        "desc": "破除幻境。",
+        "descEn": "Shatter the illusion.",
+        "effect": {
+          "log": "幻境碎散，潭底涌出一股灵气。",
+          "logEn": "The illusion shatters. Spirit energy surges from the pool's depths.",
+          "qi": 24,
+          "hp": -6
+        }
+      },
+      {
+        "label": "绕潭而行",
+        "labelEn": "Walk Around",
+        "desc": "避开奇异。",
+        "descEn": "Avoid the anomaly.",
+        "effect": {
+          "log": "你平稳绕行，神识未受干扰。",
+          "logEn": "You walk around calmly. Your mind remains undisturbed.",
+          "lifespan": 1,
+          "mp": 12
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_sword_grave",
+    "name": "剑冢遗址",
+    "nameEn": "Sword Graveyard",
+    "text": "山坡上插满破剑残刃，这里曾是一场大战的终点。",
+    "textEn": "Broken swords jut from the hillside — the resting place of a great battle.",
+    "tags": ["传承", "战斗"],
+    "choices": [
+      {
+        "label": "拔剑感应",
+        "labelEn": "Draw a Sword & Resonate",
+        "desc": "与遗意共鸣。",
+        "descEn": "Resonate with the lingering intent.",
+        "effect": {
+          "log": "千人剑意涌入你体内，气脉震颤。",
+          "logEn": "A thousand sword intents pour into your body, shaking your meridians.",
+          "atk": 4,
+          "spirit": 2,
+          "hp": -10,
+          "exp": 15
+        }
+      },
+      {
+        "label": "收集残片",
+        "labelEn": "Collect Fragments",
+        "desc": "取材带走。",
+        "descEn": "Salvage materials.",
+        "effect": {
+          "log": "你熔合碎片，凑成一件残兵器。",
+          "logEn": "You fuse the fragments into a makeshift weapon.",
+          "item": "artifact_flying_sword",
+          "lifespan": -1
+        }
+      },
+      {
+        "label": "祭奠先烈",
+        "labelEn": "Honor the Fallen",
+        "desc": "结一段因果。",
+        "descEn": "Form a karmic connection.",
+        "effect": {
+          "log": "无数残魂平息，你感到气运有所回转。",
+          "logEn": "Countless restless spirits find peace. Your fortune shifts.",
+          "luck": 2,
+          "lifespan": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_sect_inspection",
+    "name": "宗门巡察",
+    "nameEn": "Sect Patrol",
+    "text": "一支宗门执法队正在盘查散修，为首者腰别令牌，神色冷漠。",
+    "textEn": "A sect enforcement squad inspects rogue cultivators. The leader, badge at his waist, looks cold.",
+    "tags": ["剧情", "危险"],
+    "minRealm": "jzhuji",
+    "choices": [
+      {
+        "label": "亮明身份",
+        "labelEn": "Show Your Identity",
+        "desc": "坦然应对。",
+        "descEn": "Face them openly.",
+        "effect": {
+          "log": "你出示修行凭证，执法队放行，还给了些盘缠。",
+          "logEn": "You show your credentials. The squad lets you pass with some travel funds.",
+          "coin": 14,
+          "exp": 8
+        }
+      },
+      {
+        "label": "行贿通关",
+        "labelEn": "Bribe Your Way Through",
+        "desc": "花钱保平安。",
+        "descEn": "Pay for safe passage.",
+        "effect": {
+          "log": "你悄悄递出灵石，顺利通过。",
+          "logEn": "You quietly slip them spirit stones and pass without trouble.",
+          "coin": -20,
+          "lifespan": 1
+        }
+      },
+      {
+        "label": "强行突围",
+        "labelEn": "Break Through by Force",
+        "desc": "冒险一搏。",
+        "descEn": "A desperate gamble.",
+        "effect": {
+          "log": "你硬闯出包围圈，但受了点伤。",
+          "logEn": "You force your way out of the encirclement, taking some damage.",
+          "battle": "sword_bandit",
+          "enemy": "sword_bandit",
+          "qi": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_mortal_town",
+    "name": "凡人集市",
+    "nameEn": "Mortal Town Market",
+    "text": "一座热闹的凡人小镇，摊贩呼喝，炊烟袅袅，到处都是尘世烟火气。",
+    "textEn": "A lively mortal town. Vendors call out, chimney smoke curls — the warmth of ordinary life.",
+    "tags": ["剧情", "商店"],
+    "minRealm": "jzhuji",
+    "choices": [
+      {
+        "label": "购置丹药",
+        "labelEn": "Buy Medicine",
+        "desc": "补充资源。",
+        "descEn": "Restock supplies.",
+        "effect": {
+          "log": "你在草药摊上凑成一瓶丹药。",
+          "logEn": "You piece together a pill from the herb stall.",
+          "item": "pill_heal",
+          "coin": -12
+        }
+      },
+      {
+        "label": "混入人群",
+        "labelEn": "Blend into the Crowd",
+        "desc": "放松心神。",
+        "descEn": "Relax your mind.",
+        "effect": {
+          "log": "你隐去修士气息，感受凡人烟火，心神安定。",
+          "logEn": "You suppress your aura and soak in mortal life. Peace settles in.",
+          "lifespan": 4,
+          "hp": 20,
+          "mp": 16
+        }
+      },
+      {
+        "label": "收购灵材",
+        "labelEn": "Buy Rare Materials",
+        "desc": "投资长线。",
+        "descEn": "Invest for the long term.",
+        "effect": {
+          "log": "你以低价收购几株不起眼的灵草，提炼成丹。",
+          "logEn": "You buy cheap-looking spirit herbs and refine them into pills.",
+          "item": "pill_break",
+          "coin": -18,
+          "exp": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_pill_elder",
+    "name": "炼丹老翁",
+    "nameEn": "Pill-Refining Elder",
+    "text": "山路旁一位白须老者正守着一座小炉，丹香扑鼻。",
+    "textEn": "A white-bearded elder tends a small furnace by the mountain path. The scent of pills fills the air.",
+    "tags": ["丹药", "剧情"],
+    "minRealm": "jzhuji",
+    "choices": [
+      {
+        "label": "拜师学艺",
+        "labelEn": "Ask to Learn",
+        "desc": "可能领悟炼丹。",
+        "descEn": "May learn alchemy secrets.",
+        "effect": {
+          "log": "老翁授你一道炼气心法，修为微进。",
+          "logEn": "The elder teaches you a qi refinement technique. Your cultivation advances.",
+          "realmProgress": 10,
+          "qi": 14,
+          "exp": 12
+        }
+      },
+      {
+        "label": "以物换丹",
+        "labelEn": "Trade for Pills",
+        "desc": "互利交换。",
+        "descEn": "A fair exchange.",
+        "effect": {
+          "log": "你以几枚灵石换得两瓶上品丹药。",
+          "logEn": "You trade spirit stones for two premium pills.",
+          "item": "pill_qi",
+          "coin": -16
+        }
+      },
+      {
+        "label": "帮忙守炉",
+        "labelEn": "Help Tend the Furnace",
+        "desc": "耐心等待。",
+        "descEn": "Wait patiently.",
+        "effect": {
+          "log": "炉火稳住，老翁赠你一枚破境丹。",
+          "logEn": "The fire steadies. The elder gifts you a Breakthrough Pill.",
+          "item": "pill_break",
+          "lifespan": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_beast_herd",
+    "name": "兽群冲关",
+    "nameEn": "Beast Stampede",
+    "text": "一群山兽受了惊吓，从山道冲来，挡路者必遭踩踏。",
+    "textEn": "A herd of mountain beasts stampedes down the path. Anyone in the way will be trampled.",
+    "tags": ["危险", "生存"],
+    "minRealm": "jzhuji",
+    "choices": [
+      {
+        "label": "御剑飞避",
+        "labelEn": "Fly on Sword",
+        "desc": "借飞行躲过。",
+        "descEn": "Take flight to evade.",
+        "effect": {
+          "log": "你腾身而起，兽群从脚下奔涌而过。",
+          "logEn": "You soar upward as the herd thunders beneath you.",
+          "mp": -12,
+          "exp": 10,
+          "qi": 8
+        }
+      },
+      {
+        "label": "以气震退",
+        "labelEn": "Repel with Qi Pressure",
+        "desc": "强行阻拦。",
+        "descEn": "Forcefully halt them.",
+        "effect": {
+          "log": "你放出灵压，兽群四散，但消耗不小。",
+          "logEn": "You release spirit pressure. The herd scatters, but at great cost.",
+          "hp": -14,
+          "qi": 18,
+          "coin": 10
+        }
+      },
+      {
+        "label": "顺势驱赶",
+        "labelEn": "Redirect the Herd",
+        "desc": "引导方向。",
+        "descEn": "Guide them away.",
+        "effect": {
+          "log": "你借势将兽群引走，发现了它们藏匿的旧洞。",
+          "logEn": "You redirect the herd and discover their hidden old den.",
+          "item": "artifact_iron_amulet",
+          "lifespan": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_cursed_well",
+    "name": "诅咒古井",
+    "nameEn": "Cursed Well",
+    "text": "一口古井散发刺鼻的灵气，井沿刻满了封禁符文，大半已碎裂。",
+    "textEn": "An ancient well emits pungent spirit energy. Sealing runes on the rim are mostly shattered.",
+    "tags": ["危险", "秘境"],
+    "minRealm": "jzhuji",
+    "choices": [
+      {
+        "label": "破印取宝",
+        "labelEn": "Break Seals for Treasure",
+        "desc": "冒险解禁。",
+        "descEn": "Risk breaking the seals.",
+        "effect": {
+          "log": "符印碎裂，一道阴气直冲而来，但你抢到了井底沉宝。",
+          "logEn": "The seals shatter. Dark energy surges up, but you seize the treasure below.",
+          "item": "artifact_spirit_ring",
+          "hp": -18,
+          "mp": -8
+        }
+      },
+      {
+        "label": "加固符文",
+        "labelEn": "Reinforce the Seals",
+        "desc": "稳住封禁。",
+        "descEn": "Stabilize the containment.",
+        "effect": {
+          "log": "你重新加固了符文，诅咒散去，得到了一段感悟。",
+          "logEn": "You reinforce the runes. The curse dissipates, granting you insight.",
+          "realmProgress": 10,
+          "lifespan": 3
+        }
+      },
+      {
+        "label": "绕道而行",
+        "labelEn": "Go Around",
+        "desc": "不碰麻烦。",
+        "descEn": "Avoid trouble.",
+        "effect": {
+          "log": "你绕开古井，保住了清明心神。",
+          "logEn": "You go around the well, keeping your mind clear.",
+          "lifespan": 1,
+          "luck": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_spirit_contract",
+    "name": "灵兽契约",
+    "nameEn": "Spirit Beast Pact",
+    "text": "一只通体青翠的灵鹿盘踞山顶，眼中含着契约的光芒。",
+    "textEn": "A jade-green spirit deer sits atop the mountain, its eyes glowing with a pact's light.",
+    "tags": ["灵兽", "机缘"],
+    "minRealm": "jindan",
+    "choices": [
+      {
+        "label": "订立契约",
+        "labelEn": "Form the Pact",
+        "desc": "得到灵兽之力。",
+        "descEn": "Gain the beast's power.",
+        "effect": {
+          "log": "你与灵鹿订约，其灵力馈入你体。",
+          "logEn": "You form a pact with the spirit deer. Its power flows into you.",
+          "mp": 30,
+          "spirit": 2,
+          "lifespan": 4
+        }
+      },
+      {
+        "label": "试图擒拿",
+        "labelEn": "Try to Capture",
+        "desc": "可能触发战斗。",
+        "descEn": "May trigger combat.",
+        "effect": {
+          "log": "灵鹿不从，化为妖气袭来。",
+          "logEn": "The deer refuses, transforming into demonic energy and attacking.",
+          "battle": "fox_spirit",
+          "enemy": "fox_spirit",
+          "qi": 10
+        }
+      },
+      {
+        "label": "静坐等候",
+        "labelEn": "Sit & Wait",
+        "desc": "耐心感应。",
+        "descEn": "Patiently sense its intent.",
+        "effect": {
+          "log": "灵鹿主动靠近，在你肩头留下一缕灵息。",
+          "logEn": "The deer approaches, leaving a wisp of spirit energy on your shoulder.",
+          "exp": 18,
+          "luck": 2,
+          "qi": 16
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_ancient_ruin",
+    "name": "古迹探索",
+    "nameEn": "Ancient Ruin Exploration",
+    "text": "丛林中一座古代仙门遗址若隐若现，里面的阵法犹有余威。",
+    "textEn": "An ancient immortal sect ruin shimmers through the jungle. Its formations still pulse with power.",
+    "tags": ["秘境", "危险"],
+    "minRealm": "jindan",
+    "choices": [
+      {
+        "label": "破阵深入",
+        "labelEn": "Break Through",
+        "desc": "可能遇敌。",
+        "descEn": "May encounter enemies.",
+        "effect": {
+          "log": "你破开残阵，深入内部，惊动了沉睡的守卫。",
+          "logEn": "You breach the formation and enter, waking a sleeping guardian.",
+          "battle": "corpse_puppet",
+          "enemy": "corpse_puppet"
+        }
+      },
+      {
+        "label": "阵外参悟",
+        "labelEn": "Study from Outside",
+        "desc": "隔阵感知。",
+        "descEn": "Sense through the formation.",
+        "effect": {
+          "log": "你从阵外感悟残留的阵法构造，神识大进。",
+          "logEn": "You study the formation from outside. Your divine sense greatly improves.",
+          "realmProgress": 16,
+          "spirit": 2,
+          "exp": 18
+        }
+      },
+      {
+        "label": "搜索外围",
+        "labelEn": "Search the Perimeter",
+        "desc": "稳妥探索。",
+        "descEn": "Safe exploration.",
+        "effect": {
+          "log": "遗址边缘有前人遗留的储物袋。",
+          "logEn": "A storage pouch left by a predecessor lies at the ruin's edge.",
+          "item": "artifact_spirit_ring",
+          "coin": 22,
+          "exp": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_cursed_relic",
+    "name": "诅咒法器",
+    "nameEn": "Cursed Artifact",
+    "text": "路旁一件散发幽光的法器无主悬空，散发着吸引与排斥并存的气息。",
+    "textEn": "A glowing, ownerless artifact floats by the road, emanating both attraction and repulsion.",
+    "tags": ["法宝", "危险"],
+    "minRealm": "jindan",
+    "choices": [
+      {
+        "label": "强行炼化",
+        "labelEn": "Force Refine",
+        "desc": "冒险同化。",
+        "descEn": "Risk assimilation.",
+        "effect": {
+          "log": "诅咒暂被压制，法器归你所有，但气血受损。",
+          "logEn": "The curse is suppressed. The artifact is yours, but your vitality suffers.",
+          "item": "artifact_flying_sword",
+          "hp": -22,
+          "atk": 4
+        }
+      },
+      {
+        "label": "解除诅咒",
+        "labelEn": "Dispel the Curse",
+        "desc": "先化解再取。",
+        "descEn": "Cleanse first, then claim.",
+        "effect": {
+          "log": "你花了大量灵力解咒，法器随后老实落入手中。",
+          "logEn": "You spend great MP to break the curse. The artifact obediently falls into your hands.",
+          "item": "artifact_spirit_ring",
+          "mp": -25,
+          "exp": 14
+        }
+      },
+      {
+        "label": "就地毁掉",
+        "labelEn": "Destroy It",
+        "desc": "不沾因果。",
+        "descEn": "Avoid karmic entanglement.",
+        "effect": {
+          "log": "法器毁去时释放出一道灵力，滋养了你的修为。",
+          "logEn": "Destroying the artifact releases spirit energy that nourishes your cultivation.",
+          "qi": 20,
+          "realmProgress": 10,
+          "luck": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_demon_ambush",
+    "name": "魔修伏击",
+    "nameEn": "Demonic Ambush",
+    "text": "一名老牌魔修从暗处突然现身，气势汹汹，摆明了要劫走你的功法传承。",
+    "textEn": "A veteran demon cultivator ambushes you from the shadows, intent on stealing your techniques.",
+    "tags": ["战斗", "危险"],
+    "minRealm": "jindan",
+    "choices": [
+      {
+        "label": "正面迎战",
+        "labelEn": "Face Them Head-On",
+        "desc": "硬碰硬。",
+        "descEn": "Direct confrontation.",
+        "effect": {
+          "log": "你拔剑迎敌，大战一场。",
+          "logEn": "You draw your sword and engage in fierce combat.",
+          "battle": "elder_demon",
+          "enemy": "elder_demon"
+        }
+      },
+      {
+        "label": "以幻脱身",
+        "labelEn": "Escape with Illusions",
+        "desc": "幻术逃跑。",
+        "descEn": "Use illusions to flee.",
+        "effect": {
+          "log": "你以迷雾遮蔽身形，借机遁走。",
+          "logEn": "You cloak yourself in mist and escape.",
+          "mp": -18,
+          "lifespan": -1,
+          "coin": -10
+        }
+      },
+      {
+        "label": "以宝换命",
+        "labelEn": "Sacrifice an Artifact",
+        "desc": "破财消灾。",
+        "descEn": "Spend wealth to save your life.",
+        "effect": {
+          "log": "你丢出一件法器转移注意力，乘机逃脱。",
+          "logEn": "You throw an artifact as a distraction and seize the chance to flee.",
+          "item": "artifact_iron_amulet",
+          "exp": 10,
+          "lifespan": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_thunder_scroll",
+    "name": "雷法残卷",
+    "nameEn": "Thunder Art Remnant",
+    "text": "一块岩壁上刻着半残的雷法功诀，已历经数百年风雨。",
+    "textEn": "A rock face bears a half-ruined thunder technique, weathered by centuries of wind and rain.",
+    "tags": ["功法", "传承"],
+    "minRealm": "jindan",
+    "choices": [
+      {
+        "label": "强行参悟",
+        "labelEn": "Force Comprehension",
+        "desc": "全力领悟。",
+        "descEn": "Give it your all.",
+        "effect": {
+          "log": "你尽力推演，终于领悟了雷法精髓。",
+          "logEn": "Through intense effort, you finally grasp the essence of the thunder art.",
+          "unlockSkill": "skill_thunder_cut",
+          "exp": 20,
+          "mp": -15
+        }
+      },
+      {
+        "label": "拓印带走",
+        "labelEn": "Make a Rubbing",
+        "desc": "以后慢慢研究。",
+        "descEn": "Study it later at leisure.",
+        "effect": {
+          "log": "你带走了拓印，感觉日后大有用处。",
+          "logEn": "You take the rubbing. It will surely prove useful later.",
+          "item": "skill_thunder_cut",
+          "lifespan": -1
+        }
+      },
+      {
+        "label": "毁去痕迹",
+        "labelEn": "Erase the Traces",
+        "desc": "不留后患。",
+        "descEn": "Leave no trace.",
+        "effect": {
+          "log": "你毁去功诀，却从中感悟到一点天雷之道。",
+          "logEn": "You destroy the technique but glean a sliver of heavenly thunder wisdom.",
+          "spirit": 2,
+          "qi": 14,
+          "realmProgress": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_spatial_tear",
+    "name": "空间裂隙",
+    "nameEn": "Spatial Rift",
+    "text": "天地间突然撕开一道细微的裂隙，里面流出浓郁的异界灵气。",
+    "textEn": "A thin rift tears through space, leaking dense otherworldly spirit energy.",
+    "tags": ["机缘", "危险"],
+    "minRealm": "yuanying",
+    "choices": [
+      {
+        "label": "伸手探入",
+        "labelEn": "Reach Inside",
+        "desc": "冒险取物。",
+        "descEn": "Risk retrieving something.",
+        "effect": {
+          "log": "你取出一件来自异界的法器，裂隙随即合拢。",
+          "logEn": "You pull out an otherworldly artifact. The rift seals shut.",
+          "item": "artifact_flying_sword",
+          "hp": -15,
+          "exp": 20
+        }
+      },
+      {
+        "label": "引气入体",
+        "labelEn": "Absorb the Energy",
+        "desc": "趁机修炼。",
+        "descEn": "Seize the cultivation opportunity.",
+        "effect": {
+          "log": "异界灵气浓郁，短暂的引气让你修为大进。",
+          "logEn": "The otherworldly energy is rich. Brief absorption yields great progress.",
+          "qi": 40,
+          "realmProgress": 20,
+          "hp": -8
+        }
+      },
+      {
+        "label": "就地封印",
+        "labelEn": "Seal the Rift",
+        "desc": "维护秩序。",
+        "descEn": "Preserve the natural order.",
+        "effect": {
+          "log": "你封住裂隙，天道隐隐给你一段气运回馈。",
+          "logEn": "You seal the rift. The Heavenly Dao subtly rewards your fortune.",
+          "luck": 2,
+          "lifespan": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_great_cultivator",
+    "name": "大修路过",
+    "nameEn": "A Great Cultivator Passes By",
+    "text": "一位境界远超你的大修士一掌拂过，留下浓郁气息，似乎有所指点。",
+    "textEn": "A cultivator far beyond your realm brushes past, leaving a rich aura — a subtle hint of guidance.",
+    "tags": ["机缘", "剧情"],
+    "minRealm": "yuanying",
+    "choices": [
+      {
+        "label": "追上请教",
+        "labelEn": "Chase & Ask",
+        "desc": "求点拨。",
+        "descEn": "Seek enlightenment.",
+        "effect": {
+          "log": "大修驻足片刻，点拨你几句，神识豁然开朗。",
+          "logEn": "The great cultivator pauses to offer a few words. Your mind clears instantly.",
+          "realmProgress": 24,
+          "spirit": 3,
+          "exp": 24
+        }
+      },
+      {
+        "label": "感应气息",
+        "labelEn": "Sense the Aura",
+        "desc": "默默领悟。",
+        "descEn": "Silently comprehend.",
+        "effect": {
+          "log": "你感悟大修残留气息，悟出一丝更高境界的法则。",
+          "logEn": "You sense the lingering aura and grasp a sliver of higher-realm law.",
+          "qi": 36,
+          "realmProgress": 16,
+          "mp": 20
+        }
+      },
+      {
+        "label": "恭敬行礼",
+        "labelEn": "Bow Respectfully",
+        "desc": "结下善缘。",
+        "descEn": "Build good karma.",
+        "effect": {
+          "log": "大修回头微笑，赠你一枚古币，言：此物自有用处。",
+          "logEn": "The great cultivator smiles back, gifting you an ancient coin: 'This will serve you well.'",
+          "luck": 3,
+          "lifespan": 8,
+          "coin": 40
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_forbidden_art",
+    "name": "禁忌功法",
+    "nameEn": "Forbidden Art",
+    "text": "机缘巧合，你得到了一卷被列为禁忌的功法，天道异象随之而来。",
+    "textEn": "By chance, you obtain a scroll containing a forbidden art. Heavenly omens follow.",
+    "tags": ["功法", "危险"],
+    "minRealm": "yuanying",
+    "choices": [
+      {
+        "label": "冒险修炼",
+        "labelEn": "Cultivate at Your Peril",
+        "desc": "强行参悟。",
+        "descEn": "Force comprehension.",
+        "effect": {
+          "log": "功法凶险，但威力非凡，修为骤增，身体亦受创。",
+          "logEn": "The art is perilous but immensely powerful. Cultivation surges; body suffers.",
+          "atk": 6,
+          "spirit": 3,
+          "hp": -30,
+          "realmProgress": 18
+        }
+      },
+      {
+        "label": "封印收藏",
+        "labelEn": "Seal & Store",
+        "desc": "留待时机。",
+        "descEn": "Save for the right moment.",
+        "effect": {
+          "log": "你封住功法，天道异象消散，只余一丝机缘在手。",
+          "logEn": "You seal the art. The heavenly omens fade, leaving only a trace of fortune.",
+          "item": "skill_fire_palm",
+          "lifespan": 2
+        }
+      },
+      {
+        "label": "当场焚毁",
+        "labelEn": "Burn It",
+        "desc": "不沾因果。",
+        "descEn": "Avoid karmic debt.",
+        "effect": {
+          "log": "功法焚尽，天道给你一段因果清明的奖励。",
+          "logEn": "The art burns away. The Heavenly Dao rewards your karmic clarity.",
+          "luck": 2,
+          "lifespan": 10,
+          "qi": 20
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_soul_echo",
+    "name": "残魂回响",
+    "nameEn": "Remnant Soul Echo",
+    "text": "一位飞升未成的强大修士的残魂在此地徘徊，向你传递关于上境的只言片语。",
+    "textEn": "The remnant soul of a powerful cultivator who failed to ascend lingers here, whispering fragments about the next realm.",
+    "tags": ["传承", "修炼"],
+    "minRealm": "yuanying",
+    "choices": [
+      {
+        "label": "倾心聆听",
+        "labelEn": "Listen Intently",
+        "desc": "受其指引。",
+        "descEn": "Accept guidance.",
+        "effect": {
+          "log": "残魂将毕生感悟压缩成一道印记传你，气势大增。",
+          "logEn": "The soul compresses a lifetime of insight into a mark and transfers it to you.",
+          "realmProgress": 28,
+          "spirit": 4,
+          "exp": 28
+        }
+      },
+      {
+        "label": "渡其离去",
+        "labelEn": "Help It Pass On",
+        "desc": "超度善举。",
+        "descEn": "A compassionate deed.",
+        "effect": {
+          "log": "残魂平静散去，留下一道气运为谢。",
+          "logEn": "The soul departs peacefully, leaving a strand of fortune as thanks.",
+          "luck": 3,
+          "lifespan": 10,
+          "qi": 24
+        }
+      },
+      {
+        "label": "以神识问道",
+        "labelEn": "Probe with Divine Sense",
+        "desc": "主动探问。",
+        "descEn": "Actively inquire.",
+        "effect": {
+          "log": "你主动问询，残魂给出答案后消散，你对天道有了新的感悟。",
+          "logEn": "You ask directly. The soul answers, then fades. You gain new Dao insight.",
+          "qi": 30,
+          "realmProgress": 20,
+          "mp": 24
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_heaven_rift",
+    "name": "天穹裂缝",
+    "nameEn": "Heavenly Rift",
+    "text": "晴空万里中突然出现一道金色裂缝，天道法则从中倾泻而出。",
+    "textEn": "A golden crack appears in the clear sky. Heavenly laws pour through.",
+    "tags": ["天劫", "机缘"],
+    "minRealm": "huashen",
+    "choices": [
+      {
+        "label": "引法则入体",
+        "labelEn": "Channel the Laws",
+        "desc": "极度危险。",
+        "descEn": "Extremely dangerous.",
+        "effect": {
+          "log": "天道法则直接冲击你的神识，痛苦万分，但修为骤升。",
+          "logEn": "Heavenly laws slam into your divine sense. Agonizing, but cultivation soars.",
+          "realmProgress": 34,
+          "hp": -40,
+          "mp": -20,
+          "spirit": 5
+        }
+      },
+      {
+        "label": "驻足感悟",
+        "labelEn": "Stand & Contemplate",
+        "desc": "被动领悟。",
+        "descEn": "Passively comprehend.",
+        "effect": {
+          "log": "你立于裂缝之下，神识受天道法则洗礼，大有裨益。",
+          "logEn": "Standing beneath the rift, your spirit is baptized by heavenly laws.",
+          "realmProgress": 20,
+          "spirit": 3,
+          "qi": 40
+        }
+      },
+      {
+        "label": "布阵接引",
+        "labelEn": "Deploy Formation",
+        "desc": "导引法则。",
+        "descEn": "Channel the laws through a formation.",
+        "effect": {
+          "log": "你以阵法接引天道法则，平稳转化为修为与寿元。",
+          "logEn": "Your formation channels the laws into cultivation and lifespan.",
+          "realmProgress": 16,
+          "lifespan": 12,
+          "qi": 30
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_ancient_immortal",
+    "name": "仙人遗迹",
+    "nameEn": "Immortal's Remnant",
+    "text": "远古飞升之处留有不灭印记，传说此地悟道者十中有九可以顺利飞升。",
+    "textEn": "An ancient ascension site bears an undying mark. Legend says nine in ten who meditate here ascend.",
+    "tags": ["机缘", "传承"],
+    "minRealm": "huashen",
+    "choices": [
+      {
+        "label": "盘膝入定",
+        "labelEn": "Meditate Deeply",
+        "desc": "在此悟道。",
+        "descEn": "Seek enlightenment here.",
+        "effect": {
+          "log": "你在遗迹中闭关，感受古仙气息，修为飞速提升。",
+          "logEn": "You enter seclusion at the ruin, absorbing ancient immortal essence. Cultivation skyrockets.",
+          "realmProgress": 40,
+          "qi": 50,
+          "lifespan": -4
+        }
+      },
+      {
+        "label": "搜寻遗物",
+        "labelEn": "Search for Relics",
+        "desc": "找找有没有留下的宝物。",
+        "descEn": "Look for leftover treasures.",
+        "effect": {
+          "log": "遗迹中藏有古仙遗留的法宝与丹药。",
+          "logEn": "The ruin hides artifacts and pills left by the ancient immortal.",
+          "item": "artifact_flying_sword",
+          "exp": 30
+        }
+      },
+      {
+        "label": "感应上境",
+        "labelEn": "Sense the Higher Realm",
+        "desc": "神识接触飞升之门。",
+        "descEn": "Touch the gate of ascension with divine sense.",
+        "effect": {
+          "log": "你感应到飞升之门，离成仙又近了一步。",
+          "logEn": "You sense the gate of ascension — one step closer to immortality.",
+          "realmProgress": 30,
+          "spirit": 4,
+          "luck": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_celestial_trial",
+    "name": "天道试炼",
+    "nameEn": "Celestial Trial",
+    "text": "天道降下考验，你面对着一场无法回避的正面试炼。",
+    "textEn": "The Heavenly Dao sends a trial. You face an unavoidable test.",
+    "tags": ["天劫", "危险"],
+    "minRealm": "dacheng",
+    "choices": [
+      {
+        "label": "正面应战",
+        "labelEn": "Fight Head-On",
+        "desc": "硬碰硬。",
+        "descEn": "Direct confrontation.",
+        "effect": {
+          "log": "你正面迎接天罚阴兵的考验。",
+          "logEn": "You face the Celestial Enforcer's test head-on.",
+          "battle": "infernal_soldier",
+          "enemy": "infernal_soldier"
+        }
+      },
+      {
+        "label": "以法抗衡",
+        "labelEn": "Resist with Treasures",
+        "desc": "消耗重宝。",
+        "descEn": "Spend precious resources.",
+        "effect": {
+          "log": "你祭出全力，以重宝抵挡天道考验。",
+          "logEn": "You unleash everything, using precious treasures to withstand the trial.",
+          "item": "pill_thunder",
+          "realmProgress": 30,
+          "hp": -30
+        }
+      },
+      {
+        "label": "臣服受罚",
+        "labelEn": "Submit to Punishment",
+        "desc": "低头认罚。",
+        "descEn": "Accept the penalty.",
+        "effect": {
+          "log": "你低头受罚，天道给你留下一线生机与警告。",
+          "logEn": "You bow and accept punishment. The Heavenly Dao leaves you alive with a warning.",
+          "hp": -24,
+          "mp": -16,
+          "lifespan": -8,
+          "luck": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_ascension_eve",
+    "name": "飞升前夕",
+    "nameEn": "Eve of Ascension",
+    "text": "漫漫修行已近尾声，天边隐约出现了仙门的轮廓，你站在最后的抉择前。",
+    "textEn": "Your long cultivation nears its end. The immortal gate's silhouette appears on the horizon. A final choice awaits.",
+    "tags": ["机缘", "剧情"],
+    "minRealm": "dacheng",
+    "choices": [
+      {
+        "label": "全力冲击",
+        "labelEn": "Go All Out",
+        "desc": "奋力一搏。",
+        "descEn": "Give it everything.",
+        "effect": {
+          "log": "你将毕生积累倾注一处，天道感应，修为大进。",
+          "logEn": "You pour a lifetime's cultivation into a single surge. The Dao responds.",
+          "realmProgress": 40,
+          "qi": 60,
+          "hp": -20
+        }
+      },
+      {
+        "label": "稳固根基",
+        "labelEn": "Solidify Foundation",
+        "desc": "先夯实再说。",
+        "descEn": "Strengthen your base first.",
+        "effect": {
+          "log": "你放缓步伐，稳固道基，成功率提高。",
+          "logEn": "You slow down to fortify your foundation. Success rate improves.",
+          "realmProgress": 24,
+          "spirit": 4,
+          "lifespan": 8
+        }
+      },
+      {
+        "label": "留书寄怀",
+        "labelEn": "Leave Writings Behind",
+        "desc": "落笔成真。",
+        "descEn": "Write your insights into reality.",
+        "effect": {
+          "log": "你将一生感悟刻入山壁，天地回应，运气逆转。",
+          "logEn": "You carve a lifetime of insight into the cliff. Heaven and earth respond; fortune shifts.",
+          "luck": 4,
+          "realmProgress": 18,
+          "lifespan": 12
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_shadow_ambush",
+    "name": "暗影魔修",
+    "nameEn": "Shadow Demon Ambush",
+    "text": "一股阴冷的魂魄波动从地底涌出，一名黑袍魔修缓缓现形，双眼没有瞳孔。",
+    "textEn": "A chilling soul ripple surges from underground. A black-robed demon cultivator materializes — eyeless.",
+    "tags": ["战斗", "危险"],
+    "minRealm": "yuanying",
+    "choices": [
+      {
+        "label": "直面交锋",
+        "labelEn": "Fight Directly",
+        "desc": "正面硬刚。",
+        "descEn": "Confront head-on.",
+        "effect": {
+          "log": "你感应到对方的魂魄压制，拔剑迎战。",
+          "logEn": "You sense the enemy's soul pressure and draw your sword.",
+          "battle": "shadow_cultivator",
+          "enemy": "shadow_cultivator"
+        }
+      },
+      {
+        "label": "以魂御魂",
+        "labelEn": "Soul vs. Soul",
+        "desc": "拼精神力。",
+        "descEn": "Contest of spiritual power.",
+        "effect": {
+          "log": "你以神识对抗阴影，灵魂震颤。",
+          "logEn": "You pit your divine sense against the shadow. Your soul trembles.",
+          "battle": "shadow_cultivator",
+          "enemy": "shadow_cultivator",
+          "spirit": 2
+        }
+      },
+      {
+        "label": "燃符退敌",
+        "labelEn": "Burn Talismans to Retreat",
+        "desc": "消耗法宝。",
+        "descEn": "Spend artifacts to escape.",
+        "effect": {
+          "log": "你祭出护符，阴影暂退，你夺路而走。",
+          "logEn": "You deploy a talisman. The shadow retreats briefly, and you flee.",
+          "mp": -20,
+          "hp": -10,
+          "lifespan": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_beast_awakening",
+    "name": "上古异兽苏醒",
+    "nameEn": "Primordial Beast Awakens",
+    "text": "大地震颤，远古封印崩裂，一只体型如山的异兽从沉睡中醒来，灵压覆盖数里。",
+    "textEn": "The earth trembles. An ancient seal shatters. A mountain-sized beast awakens, its aura blanketing miles.",
+    "tags": ["战斗", "危险"],
+    "minRealm": "huashen",
+    "choices": [
+      {
+        "label": "迎战异兽",
+        "labelEn": "Fight the Beast",
+        "desc": "正面一搏。",
+        "descEn": "Take on the beast directly.",
+        "effect": {
+          "log": "你祭出全力，与远古存在对决。",
+          "logEn": "You unleash everything and duel the primordial being.",
+          "battle": "ancient_beast",
+          "enemy": "ancient_beast"
+        }
+      },
+      {
+        "label": "借势感悟",
+        "labelEn": "Cultivate Under Pressure",
+        "desc": "在灵压下突破。",
+        "descEn": "Break through under its aura.",
+        "effect": {
+          "log": "你借异兽灵压锤炼己身，痛苦中有所突破。",
+          "logEn": "You use the beast's pressure to temper yourself. Pain yields progress.",
+          "hp": -35,
+          "realmProgress": 30,
+          "spirit": 4
+        }
+      },
+      {
+        "label": "远遁避其锋芒",
+        "labelEn": "Flee Far Away",
+        "desc": "保命要紧。",
+        "descEn": "Survival first.",
+        "effect": {
+          "log": "你全力遁走，异兽并未追击。",
+          "logEn": "You flee at full speed. The beast does not pursue.",
+          "mp": -25,
+          "lifespan": -3,
+          "qi": 20
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_tribulation_forge",
+    "name": "劫雷锤炼",
+    "nameEn": "Tribulation Thunder Tempering",
+    "text": "天际劫云翻涌，紫色雷霆隐现。这不是天劫本体，但劫雷余波足以锤炼修士肉身。",
+    "textEn": "Tribulation clouds churn on the horizon, purple lightning flickering. Not the tribulation itself, but its residual thunder can still temper a cultivator's body.",
+    "tags": ["天劫", "修炼"],
+    "minRealm": "dujie",
+    "choices": [
+      {
+        "label": "引雷淬体",
+        "labelEn": "Channel Lightning into Body",
+        "desc": "以劫雷强化肉身。",
+        "descEn": "Strengthen the body with tribulation lightning.",
+        "effect": {
+          "log": "劫雷贯体，你咬牙承受，肉身更加坚韧。",
+          "logEn": "Lightning courses through you. You grit your teeth — your body grows tougher.",
+          "hp": -40,
+          "atk": 5,
+          "def": 4,
+          "realmProgress": 24
+        }
+      },
+      {
+        "label": "以阵接雷",
+        "labelEn": "Formation Lightning Rod",
+        "desc": "布阵转化雷力。",
+        "descEn": "Use a formation to convert lightning.",
+        "effect": {
+          "log": "你布下引雷阵，将劫雷转化为纯净灵力。",
+          "logEn": "You deploy a formation to convert tribulation lightning into pure spirit energy.",
+          "qi": 60,
+          "mp": 30,
+          "realmProgress": 16
+        }
+      },
+      {
+        "label": "静观天象",
+        "labelEn": "Observe the Heavens",
+        "desc": "感悟天道规则。",
+        "descEn": "Comprehend heavenly rules.",
+        "effect": {
+          "log": "你远观劫云运行，对天道法则有了更深领悟。",
+          "logEn": "You watch the tribulation clouds from afar, gaining deeper insight into heavenly laws.",
+          "spirit": 4,
+          "luck": 2,
+          "realmProgress": 20
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_heart_demon",
+    "name": "心魔试探",
+    "nameEn": "Heart Demon's Test",
+    "text": "突然间，你看到了过去修行中所有的遗憾——未救之人、错失之缘、背弃之盟。心魔化形，与你对坐。",
+    "textEn": "Suddenly you see every regret of your cultivation — those you failed to save, opportunities missed, oaths broken. The heart demon manifests, sitting opposite you.",
+    "tags": ["天劫", "剧情"],
+    "minRealm": "dujie",
+    "choices": [
+      {
+        "label": "直面心魔",
+        "labelEn": "Face the Demon",
+        "desc": "接受一切遗憾。",
+        "descEn": "Accept all regrets.",
+        "effect": {
+          "log": "你坦然面对过往，心魔在你的坦诚前消散。道心更加坚固。",
+          "logEn": "You face the past with honesty. The heart demon dissolves before your sincerity. Your Dao heart strengthens.",
+          "spirit": 6,
+          "realmProgress": 30,
+          "luck": 3
+        }
+      },
+      {
+        "label": "以力镇压",
+        "labelEn": "Suppress by Force",
+        "desc": "强行压制心魔。",
+        "descEn": "Overpower the demon with raw strength.",
+        "effect": {
+          "log": "你以绝对修为压制心魔，虽然粗暴但有效。",
+          "logEn": "You crush the heart demon with sheer power. Crude but effective.",
+          "hp": -30,
+          "mp": -20,
+          "realmProgress": 22,
+          "atk": 4
+        }
+      },
+      {
+        "label": "与心魔对话",
+        "labelEn": "Talk to the Demon",
+        "desc": "试着理解它。",
+        "descEn": "Try to understand it.",
+        "effect": {
+          "log": "你与心魔交谈，发现它是你自己的一部分。两者合一，你的神识空前清明。",
+          "logEn": "You converse with the demon and realize it is part of you. Merging, your mind reaches unprecedented clarity.",
+          "spirit": 8,
+          "realmProgress": 26,
+          "lifespan": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_nine_heaven_path",
+    "name": "九天引路",
+    "nameEn": "Path to the Nine Heavens",
+    "text": "一道金色光柱从天而降，照亮了通往九天的道路。这是飞升前的最后指引。",
+    "textEn": "A golden pillar of light descends from heaven, illuminating the path to the Nine Heavens — the final guide before ascension.",
+    "tags": ["天劫", "机缘"],
+    "minRealm": "dujie",
+    "choices": [
+      {
+        "label": "踏入光柱",
+        "labelEn": "Step into the Light",
+        "desc": "接受天道指引。",
+        "descEn": "Accept heavenly guidance.",
+        "effect": {
+          "log": "光柱灌注全身，你距离飞升又近了一大步。",
+          "logEn": "The light floods through you. You are one great step closer to ascension.",
+          "realmProgress": 40,
+          "qi": 80,
+          "hp": -20
+        }
+      },
+      {
+        "label": "在光中修炼",
+        "labelEn": "Cultivate in the Light",
+        "desc": "借天道之力提升。",
+        "descEn": "Use heavenly power for enhancement.",
+        "effect": {
+          "log": "你在金光中盘膝，所有属性都得到了提升。",
+          "logEn": "You meditate in the golden light. All attributes improve.",
+          "atk": 3,
+          "def": 3,
+          "spirit": 3,
+          "luck": 2,
+          "realmProgress": 20
+        }
+      },
+      {
+        "label": "记录天道轨迹",
+        "labelEn": "Record the Heavenly Pattern",
+        "desc": "留存感悟。",
+        "descEn": "Preserve the insight.",
+        "effect": {
+          "log": "你将天道轨迹刻入神识，这份感悟将在关键时刻助你一臂之力。",
+          "logEn": "You engrave the heavenly pattern into your divine sense. This insight will serve you at a critical moment.",
+          "realmProgress": 34,
+          "lifespan": 12,
+          "exp": 40
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_sect_invitation",
+    "name": "三宗来使",
+    "nameEn": "Three Sect Envoys",
+    "text": "一座茶楼里坐着三位修士，分别来自剑宗、丹宗和符宗。他们都对你展现了招揽之意。",
+    "textEn": "In a teahouse sit three cultivators from the Sword, Alchemy, and Talisman Sects — all extending invitations.",
+    "tags": ["剧情", "机缘"],
+    "minRealm": "jzhuji",
+    "choices": [
+      {
+        "label": "加入剑宗",
+        "labelEn": "Join Sword Sect",
+        "desc": "攻伐为先。",
+        "descEn": "Offense above all.",
+        "effect": {
+          "log": "你选择了剑宗，以剑入道。",
+          "logEn": "You choose the Sword Sect — the path of the blade.",
+          "joinSect": "jian",
+          "atk": 2,
+          "qi": 10
+        }
+      },
+      {
+        "label": "加入丹宗",
+        "labelEn": "Join Alchemy Sect",
+        "desc": "续命为本。",
+        "descEn": "Longevity through pills.",
+        "effect": {
+          "log": "你选择了丹宗，炼丹悟药。",
+          "logEn": "You choose the Alchemy Sect — the way of the pill.",
+          "joinSect": "dan",
+          "hp": 10,
+          "mp": 10
+        }
+      },
+      {
+        "label": "加入符宗",
+        "labelEn": "Join Talisman Sect",
+        "desc": "万法归宗。",
+        "descEn": "All arts converge in formations.",
+        "effect": {
+          "log": "你选择了符宗，画符布阵。",
+          "logEn": "You choose the Talisman Sect — the art of formations.",
+          "joinSect": "fu",
+          "def": 2,
+          "luck": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_jian_sparring",
+    "name": "剑道切磋",
+    "nameEn": "Sword Dao Sparring",
+    "text": "剑宗同门邀你切磋剑法，剑光交织间暗藏指点。",
+    "textEn": "A fellow Sword Sect disciple invites you to spar. Hidden teachings lie within the clashing blades.",
+    "tags": ["功法", "修炼"],
+    "minRealm": "jindan",
+    "sectOnly": "jian",
+    "choices": [
+      {
+        "label": "全力比试",
+        "labelEn": "Fight with All You Have",
+        "desc": "拼尽全力。",
+        "descEn": "Give it your all.",
+        "effect": {
+          "log": "你在切磋中悟出新的剑招。",
+          "logEn": "You discover a new sword move through sparring.",
+          "atk": 4,
+          "spirit": 2,
+          "hp": -12,
+          "exp": 16
+        }
+      },
+      {
+        "label": "请教前辈",
+        "labelEn": "Seek Elder Advice",
+        "desc": "虚心学习。",
+        "descEn": "Learn humbly.",
+        "effect": {
+          "log": "前辈指点，你的剑意更加凝练。",
+          "logEn": "The elder's guidance refines your sword intent.",
+          "realmProgress": 14,
+          "qi": 20,
+          "exp": 12
+        }
+      },
+      {
+        "label": "旁观悟道",
+        "labelEn": "Watch & Learn",
+        "desc": "从旁领悟。",
+        "descEn": "Comprehend from the sidelines.",
+        "effect": {
+          "log": "你在旁观中有所感悟。",
+          "logEn": "You gain insight from watching.",
+          "spirit": 2,
+          "qi": 14,
+          "luck": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_jian_legacy",
+    "name": "剑意传承",
+    "nameEn": "Sword Intent Legacy",
+    "text": "剑宗秘阁开放一日，你有机会进入参悟上古剑意残卷。",
+    "textEn": "The Sword Sect's secret vault opens for a day. You may study ancient sword intent scrolls.",
+    "tags": ["传承", "功法"],
+    "minRealm": "yuanying",
+    "sectOnly": "jian",
+    "choices": [
+      {
+        "label": "强行参悟",
+        "labelEn": "Force Comprehension",
+        "desc": "冒险领悟。",
+        "descEn": "Risk understanding.",
+        "effect": {
+          "log": "你悟出了上古剑意的一缕真谛。",
+          "logEn": "You grasp a thread of the ancient sword intent's true essence.",
+          "unlockSkill": "skill_thunder_cut",
+          "atk": 3,
+          "hp": -20
+        }
+      },
+      {
+        "label": "缓慢研读",
+        "labelEn": "Study Slowly",
+        "desc": "稳扎稳打。",
+        "descEn": "Steady and methodical.",
+        "effect": {
+          "log": "你细细品读，剑道根基更加深厚。",
+          "logEn": "You study carefully. Your sword dao foundation deepens.",
+          "realmProgress": 22,
+          "spirit": 3,
+          "exp": 20
+        }
+      },
+      {
+        "label": "抄录带走",
+        "labelEn": "Copy & Take",
+        "desc": "日后再看。",
+        "descEn": "Review later.",
+        "effect": {
+          "log": "你抄下要点，带回细细钻研。",
+          "logEn": "You copy the key points for later research.",
+          "item": "skill_thunder_cut",
+          "lifespan": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_dan_brewing",
+    "name": "炼丹大会",
+    "nameEn": "Grand Alchemy Assembly",
+    "text": "丹宗举办年度炼丹大会，你被分到一批上品灵草和一座灵炉。",
+    "textEn": "The Alchemy Sect holds its annual grand assembly. You receive premium spirit herbs and a spirit furnace.",
+    "tags": ["丹药", "修炼"],
+    "minRealm": "jindan",
+    "sectOnly": "dan",
+    "choices": [
+      {
+        "label": "炼制上品丹",
+        "labelEn": "Refine Premium Pills",
+        "desc": "冒险冲击高品。",
+        "descEn": "Risk going for top quality.",
+        "effect": {
+          "log": "你成功炼出上品丹药！",
+          "logEn": "You successfully refine premium-grade pills!",
+          "item": "pill_break",
+          "exp": 16,
+          "mp": -15
+        }
+      },
+      {
+        "label": "炼制回春丹",
+        "labelEn": "Refine Rejuvenation Pills",
+        "desc": "稳妥产出。",
+        "descEn": "Safe and reliable output.",
+        "effect": {
+          "log": "你顺利炼成数瓶回春丹。",
+          "logEn": "You successfully refine several Rejuvenation Pills.",
+          "item": "pill_heal",
+          "exp": 10,
+          "qi": 12
+        }
+      },
+      {
+        "label": "研究药理",
+        "labelEn": "Study Pharmacology",
+        "desc": "积累理论。",
+        "descEn": "Build theoretical knowledge.",
+        "effect": {
+          "log": "你在药理上有了新的认识。",
+          "logEn": "You gain new understanding of pharmacology.",
+          "spirit": 2,
+          "realmProgress": 12,
+          "lifespan": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_dan_herb_garden",
+    "name": "药田采集",
+    "nameEn": "Herb Garden Harvest",
+    "text": "丹宗药田灵草成熟，你有资格采集一批。",
+    "textEn": "The Alchemy Sect's herb garden is ripe for harvest. You are allowed to gather a batch.",
+    "tags": ["丹药", "机缘"],
+    "minRealm": "jzhuji",
+    "sectOnly": "dan",
+    "choices": [
+      {
+        "label": "采集灵草",
+        "labelEn": "Harvest Spirit Herbs",
+        "desc": "直接收获。",
+        "descEn": "Immediate gains.",
+        "effect": {
+          "log": "你采到几株上品灵草。",
+          "logEn": "You harvest several premium spirit herbs.",
+          "item": "pill_qi",
+          "exp": 8
+        }
+      },
+      {
+        "label": "寻找珍稀品种",
+        "labelEn": "Search for Rare Species",
+        "desc": "碰碰运气。",
+        "descEn": "Try your luck.",
+        "effect": {
+          "log": "你在角落发现了一株极品灵草。",
+          "logEn": "You discover a supreme-grade spirit herb in a corner.",
+          "item": "pill_longevity",
+          "hp": -6
+        }
+      },
+      {
+        "label": "帮忙除草",
+        "labelEn": "Help with Weeding",
+        "desc": "积累善缘。",
+        "descEn": "Build goodwill.",
+        "effect": {
+          "log": "药田管理者感谢你的帮忙，赠你一枚延寿丹。",
+          "logEn": "The garden keeper thanks you and gifts a Longevity Pill.",
+          "item": "pill_longevity",
+          "lifespan": -1,
+          "exp": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_fu_array",
+    "name": "阵法研究",
+    "nameEn": "Formation Research",
+    "text": "符宗阵法室开放实验，你可以参与一场阵法推演。",
+    "textEn": "The Talisman Sect's formation lab opens for experiments. You may join a formation drill.",
+    "tags": ["修炼", "传承"],
+    "minRealm": "jindan",
+    "sectOnly": "fu",
+    "choices": [
+      {
+        "label": "主导推演",
+        "labelEn": "Lead the Drill",
+        "desc": "独挑大梁。",
+        "descEn": "Take the lead.",
+        "effect": {
+          "log": "你成功推演出新的阵法变体。",
+          "logEn": "You successfully derive a new formation variant.",
+          "def": 3,
+          "spirit": 2,
+          "exp": 16,
+          "mp": -12
+        }
+      },
+      {
+        "label": "协助运算",
+        "labelEn": "Assist Calculations",
+        "desc": "配合团队。",
+        "descEn": "Work with the team.",
+        "effect": {
+          "log": "你在协作中积累了阵法经验。",
+          "logEn": "You gain formation experience through teamwork.",
+          "realmProgress": 14,
+          "luck": 2,
+          "qi": 16
+        }
+      },
+      {
+        "label": "记录数据",
+        "labelEn": "Record Data",
+        "desc": "务实积累。",
+        "descEn": "Practical accumulation.",
+        "effect": {
+          "log": "你详细记录了推演数据，日后大有用处。",
+          "logEn": "You meticulously record the drill data. It will prove useful later.",
+          "exp": 12,
+          "coin": 18,
+          "spirit": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "evt_fu_talisman",
+    "name": "符箓制作",
+    "nameEn": "Talisman Crafting",
+    "text": "符宗前辈传授你制作高阶符箓的技巧。",
+    "textEn": "A Talisman Sect elder teaches you advanced talisman crafting techniques.",
+    "tags": ["法宝", "传承"],
+    "minRealm": "jzhuji",
+    "sectOnly": "fu",
+    "choices": [
+      {
+        "label": "制作攻击符",
+        "labelEn": "Craft Attack Talisman",
+        "desc": "威力型。",
+        "descEn": "Offensive type.",
+        "effect": {
+          "log": "你成功制作了一张攻击符箓。",
+          "logEn": "You successfully craft an attack talisman.",
+          "atk": 3,
+          "mp": -10,
+          "exp": 10
+        }
+      },
+      {
+        "label": "制作防御符",
+        "labelEn": "Craft Defense Talisman",
+        "desc": "稳固型。",
+        "descEn": "Defensive type.",
+        "effect": {
+          "log": "你制成防御符，加固己身。",
+          "logEn": "You craft a defense talisman, fortifying yourself.",
+          "item": "artifact_iron_amulet",
+          "exp": 8
+        }
+      },
+      {
+        "label": "制作运势符",
+        "labelEn": "Craft Fortune Talisman",
+        "desc": "玄学型。",
+        "descEn": "Mystical type.",
+        "effect": {
+          "log": "运势符成型，你感到气运微妙变化。",
+          "logEn": "The fortune talisman takes shape. You sense a subtle shift in luck.",
+          "luck": 3,
+          "lifespan": 4,
+          "exp": 6
+        }
+      }
+    ]
+  }
+]

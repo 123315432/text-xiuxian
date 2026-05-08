@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "axon": {
+      "command": "axon",
+      "args": [
+        "serve",
+        "--watch"
+      ]
+    },
+    "codegraphcontext": {
+      "command": "cgc",
+      "args": [
+        "mcp",
+        "start"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.git/
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+.cache/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+coverage/

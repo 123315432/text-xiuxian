@@ -1,0 +1,70 @@
+TASK: Playtest text-xiuxian H5 game at http://localhost:5174/ using Playwright MCP. Report all bugs found.
+
+DO NOT modify any files. This is a READ-ONLY audit + browser test.
+
+## Test Plan
+
+### Test 1: Basic game loop
+1. Navigate to http://localhost:5174/
+2. Take screenshot to verify initial load
+3. Click "外出历练" button (data-action="explore")
+4. Verify event modal appears
+5. Click first choice button (data-choice="0")
+6. Verify modal closes, log updates
+7. Repeat explore 3 more times
+8. Take screenshot
+
+### Test 2: Battle flow
+1. Keep exploring until a battle event appears (may need 5-10 explores)
+2. When battle modal opens, click "普攻" (data-battle="attack")
+3. Verify battle log updates
+4. Continue attacking until battle ends
+5. Take screenshot after battle
+
+### Test 3: Reincarnation modal
+1. Click "转世" button in top bar (data-action="reincarnation")
+2. Verify reincarnation modal opens showing 道果 count and 8 perk cards
+3. Take screenshot of the modal
+4. Close modal
+
+### Test 4: Inventory modal
+1. Click "背包总览" (data-action="inventory")
+2. Verify 3 groups shown (功法/法宝/丹药)
+3. Take screenshot
+4. Close modal
+
+### Test 5: Save/Load
+1. Click "存档" (data-action="save")
+2. Verify notice shows "进度已保存"
+3. Click "读档" (data-action="load")
+4. Verify notice shows "已载入"
+
+### Test 6: Status panel check
+1. Look at the side panel
+2. Verify "门派" row shows "散修" (no sect yet)
+3. Verify all stat rows are visible
+
+### Test 7: Force game over (for reincarnation test)
+1. Run JavaScript in console:
+   - Access the game state via localStorage
+   - Set gameOver=true, ending='died', hp=0
+   - Reload the page
+2. Verify game over state shows
+3. Click "转世" button
+4. Verify 道果 count > 0
+5. Take screenshot
+
+### Test 8: Mobile viewport
+1. Resize browser to 375x667 (iPhone SE)
+2. Take screenshot
+3. Verify layout is single-column, no horizontal scroll
+4. Open event modal if possible, take screenshot
+
+## Reporting
+After all tests, output a structured report:
+- PASS/FAIL for each test
+- Screenshots taken
+- Any bugs found with description
+- Any UI issues on mobile
+
+Use playwright MCP tools: browser_navigate, browser_click, browser_snapshot, browser_take_screenshot, browser_evaluate, browser_resize

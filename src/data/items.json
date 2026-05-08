@@ -1,0 +1,220 @@
+[
+  {
+    "id": "skill_breath_sword",
+    "name": "吐纳剑诀",
+    "nameEn": "Breath Sword Art",
+    "type": "skill",
+    "rarity": "common",
+    "desc": "稳健剑气，附带额外伤害。",
+    "descEn": "Steady sword qi with bonus damage.",
+    "stats": {
+      "atk": 2,
+      "spirit": 1
+    },
+    "effect": {
+      "breakthroughChance": 1
+    }
+  },
+  {
+    "id": "skill_fire_palm",
+    "name": "赤焰掌",
+    "nameEn": "Crimson Flame Palm",
+    "type": "skill",
+    "rarity": "rare",
+    "desc": "灼烧敌手，伤害更高。",
+    "descEn": "Scorches the enemy for higher damage.",
+    "stats": {
+      "atk": 4,
+      "spirit": 2
+    },
+    "effect": {
+      "breakthroughChance": 2
+    }
+  },
+  {
+    "id": "skill_ice_mystic",
+    "name": "玄冰指",
+    "nameEn": "Mystic Ice Finger",
+    "type": "skill",
+    "rarity": "rare",
+    "desc": "冻结经脉，降低敌方攻击。",
+    "descEn": "Freezes meridians, reducing enemy attack.",
+    "stats": {
+      "atk": 3,
+      "def": 1,
+      "spirit": 2
+    },
+    "effect": {
+      "breakthroughChance": 2
+    }
+  },
+  {
+    "id": "skill_thunder_cut",
+    "name": "雷煞斩",
+    "nameEn": "Thunder Doom Slash",
+    "type": "skill",
+    "rarity": "epic",
+    "desc": "引雷入刃，强攻但耗灵更高。",
+    "descEn": "Channels lightning into blade. Powerful but MP-costly.",
+    "stats": {
+      "atk": 6,
+      "spirit": 3
+    },
+    "effect": {
+      "breakthroughChance": 4
+    }
+  },
+  {
+    "id": "skill_cloud_step",
+    "name": "踏云步",
+    "nameEn": "Cloud Stride",
+    "type": "skill",
+    "rarity": "rare",
+    "desc": "步法轻灵，回合后可自愈。",
+    "descEn": "Agile footwork with post-turn self-healing.",
+    "stats": {
+      "def": 2,
+      "spirit": 1
+    },
+    "effect": {
+      "breakthroughChance": 2
+    }
+  },
+  {
+    "id": "artifact_spirit_ring",
+    "name": "聚灵戒",
+    "nameEn": "Spirit Gathering Ring",
+    "type": "artifact",
+    "rarity": "rare",
+    "desc": "修炼时增加灵气获取。",
+    "descEn": "Increases spirit energy absorption during cultivation.",
+    "stats": {
+      "mp": 18,
+      "spirit": 2
+    },
+    "effect": {
+      "breakthroughChance": 3
+    }
+  },
+  {
+    "id": "artifact_iron_amulet",
+    "name": "玄铁护符",
+    "nameEn": "Dark Iron Amulet",
+    "type": "artifact",
+    "rarity": "common",
+    "desc": "提升防御与气血上限。",
+    "descEn": "Boosts defense and max HP.",
+    "stats": {
+      "hp": 20,
+      "def": 3
+    },
+    "effect": {
+      "lifespan": 4
+    }
+  },
+  {
+    "id": "artifact_flying_sword",
+    "name": "飞剑",
+    "nameEn": "Flying Sword",
+    "type": "artifact",
+    "rarity": "epic",
+    "desc": "御剑杀敌，提升攻击。",
+    "descEn": "Slay enemies with sword flight. Boosts ATK.",
+    "stats": {
+      "atk": 8,
+      "mp": 10
+    },
+    "effect": {
+      "breakthroughChance": 4
+    }
+  },
+  {
+    "id": "pill_qi",
+    "name": "聚气丹",
+    "nameEn": "Qi Gathering Pill",
+    "type": "pill",
+    "rarity": "common",
+    "desc": "立刻恢复灵力。",
+    "descEn": "Instantly restores MP.",
+    "effect": {
+      "healMp": 55
+    }
+  },
+  {
+    "id": "pill_heal",
+    "name": "回春丹",
+    "nameEn": "Rejuvenation Pill",
+    "type": "pill",
+    "rarity": "common",
+    "desc": "恢复气血。",
+    "descEn": "Restores HP.",
+    "effect": {
+      "healHp": 65
+    }
+  },
+  {
+    "id": "pill_break",
+    "name": "破境丹",
+    "nameEn": "Breakthrough Pill",
+    "type": "pill",
+    "rarity": "rare",
+    "desc": "提升突破成功率。",
+    "descEn": "Increases breakthrough success rate.",
+    "effect": {
+      "breakthroughChance": 18
+    }
+  },
+  {
+    "id": "pill_longevity",
+    "name": "延寿丹",
+    "nameEn": "Longevity Pill",
+    "type": "pill",
+    "rarity": "epic",
+    "desc": "增加寿命。",
+    "descEn": "Extends lifespan.",
+    "effect": {
+      "lifespan": 30
+    }
+  },
+  {
+    "id": "pill_thunder",
+    "name": "避雷符",
+    "nameEn": "Thunder Ward Talisman",
+    "type": "pill",
+    "rarity": "rare",
+    "desc": "削弱天劫伤害。",
+    "descEn": "Reduces tribulation damage.",
+    "effect": {
+      "breakthroughChance": 6
+    }
+  },
+  {
+    "id": "artifact_heavenly_sword",
+    "name": "天罚神剑",
+    "nameEn": "Heavenly Punishment Sword",
+    "type": "artifact",
+    "rarity": "legendary",
+    "desc": "传说中天道执法者所用之剑，攻伐之力冠绝天下。",
+    "descEn": "The legendary sword wielded by Celestial Enforcers, unmatched in offensive power.",
+    "stats": {
+      "atk": 12,
+      "spirit": 5
+    },
+    "effect": {
+      "breakthroughChance": 6
+    }
+  },
+  {
+    "id": "pill_immortal",
+    "name": "仙灵丹",
+    "nameEn": "Immortal Elixir",
+    "type": "pill",
+    "rarity": "legendary",
+    "desc": "以九天灵液凝炼而成，服之可续命百岁。",
+    "descEn": "Refined from Nine Heavens spirit liquid. Extends life by a century.",
+    "effect": {
+      "healHp": 200,
+      "lifespan": 60
+    }
+  }
+]

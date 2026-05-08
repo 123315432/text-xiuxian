@@ -1,0 +1,10 @@
+[
+  { "id": "mat_spirit_grass", "name": "灵草", "nameEn": "Spirit Grass", "type": "material", "rarity": "common", "desc": "修仙界最基本的炼丹材料。", "descEn": "The most basic alchemy ingredient in the cultivation world." },
+  { "id": "mat_fire_lotus", "name": "火莲", "nameEn": "Fire Lotus", "type": "material", "rarity": "rare", "desc": "生于火山口的珍稀灵植，炼丹不可或缺。", "descEn": "A rare spirit plant from volcanic craters, essential for alchemy." },
+  { "id": "mat_cold_jade", "name": "寒玉", "nameEn": "Frost Jade", "type": "material", "rarity": "rare", "desc": "千年冰穴中凝结的灵玉。", "descEn": "Spirit jade crystallized in a millennium-old ice cavern." },
+  { "id": "mat_thunder_wood", "name": "雷击木", "nameEn": "Thunder-Struck Wood", "type": "material", "rarity": "rare", "desc": "被天雷劈中后存活的古木，蕴含雷灵。", "descEn": "Ancient wood that survived a heavenly thunderbolt, infused with lightning essence." },
+  { "id": "mat_blood_ginseng", "name": "血参", "nameEn": "Blood Ginseng", "type": "material", "rarity": "epic", "desc": "万年血参，能大幅提升丹药品质。", "descEn": "A ten-thousand-year blood ginseng that greatly enhances pill quality." },
+  { "id": "mat_star_sand", "name": "星辰砂", "nameEn": "Star Sand", "type": "material", "rarity": "epic", "desc": "流星残留的细沙，极为稀有。", "descEn": "Fine sand left by fallen meteors, extremely rare." },
+  { "id": "mat_dragon_bone", "name": "龙骨粉", "nameEn": "Dragon Bone Powder", "type": "material", "rarity": "legendary", "desc": "远古真龙遗骸研磨而成，炼丹至宝。", "descEn": "Ground from ancient dragon remains, the supreme alchemy treasure." },
+  { "id": "mat_moonlight_dew", "name": "月华露", "nameEn": "Moonlight Dew", "type": "material", "rarity": "rare", "desc": "月圆之夜采集的灵露，清凉通透。", "descEn": "Spirit dew collected on a full moon night, cool and crystal-clear." }
+]

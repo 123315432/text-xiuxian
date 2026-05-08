@@ -1,0 +1,90 @@
+[
+  {
+    "key": "lianqi",
+    "name": "练气",
+    "nameEn": "Qi Refining",
+    "maxQi": 100,
+    "breakthroughNeed": 40,
+    "baseSuccess": 88,
+    "rewardStat": { "hp": 18, "mp": 14, "atk": 4, "def": 3, "spirit": 2, "luck": 1 },
+    "title": "初窥仙途",
+    "titleEn": "Mortal Cultivator"
+  },
+  {
+    "key": "jzhuji",
+    "name": "筑基",
+    "nameEn": "Foundation",
+    "maxQi": 180,
+    "breakthroughNeed": 60,
+    "baseSuccess": 80,
+    "rewardStat": { "hp": 28, "mp": 22, "atk": 7, "def": 5, "spirit": 3, "luck": 1 },
+    "title": "灵台筑基",
+    "titleEn": "Foundation Builder"
+  },
+  {
+    "key": "jindan",
+    "name": "金丹",
+    "nameEn": "Golden Core",
+    "maxQi": 300,
+    "breakthroughNeed": 90,
+    "baseSuccess": 70,
+    "rewardStat": { "hp": 40, "mp": 32, "atk": 11, "def": 8, "spirit": 4, "luck": 2 },
+    "title": "丹成一转",
+    "titleEn": "Core Former"
+  },
+  {
+    "key": "yuanying",
+    "name": "元婴",
+    "nameEn": "Nascent Soul",
+    "maxQi": 460,
+    "breakthroughNeed": 130,
+    "baseSuccess": 62,
+    "rewardStat": { "hp": 58, "mp": 44, "atk": 15, "def": 11, "spirit": 5, "luck": 2 },
+    "title": "婴化元神",
+    "titleEn": "Soul Manifester"
+  },
+  {
+    "key": "huashen",
+    "name": "化神",
+    "nameEn": "Spirit Severing",
+    "maxQi": 650,
+    "breakthroughNeed": 180,
+    "baseSuccess": 55,
+    "rewardStat": { "hp": 82, "mp": 58, "atk": 20, "def": 15, "spirit": 6, "luck": 3 },
+    "title": "神识照天",
+    "titleEn": "Spirit Transformer"
+  },
+  {
+    "key": "dacheng",
+    "name": "大乘",
+    "nameEn": "Mahayana",
+    "maxQi": 900,
+    "breakthroughNeed": 240,
+    "baseSuccess": 48,
+    "rewardStat": { "hp": 110, "mp": 76, "atk": 26, "def": 19, "spirit": 8, "luck": 3 },
+    "title": "道合天地",
+    "titleEn": "Grand Cultivator"
+  },
+  {
+    "key": "dujie",
+    "name": "渡劫",
+    "nameEn": "Tribulation",
+    "maxQi": 1200,
+    "breakthroughNeed": 320,
+    "baseSuccess": 40,
+    "rewardStat": { "hp": 148, "mp": 96, "atk": 33, "def": 24, "spirit": 10, "luck": 4 },
+    "title": "雷劫加身",
+    "titleEn": "Tribulation Crosser"
+  },
+  {
+    "key": "feisheng",
+    "name": "飞升",
+    "nameEn": "Ascension",
+    "maxQi": 1600,
+    "breakthroughNeed": 0,
+    "baseSuccess": 100,
+    "rewardStat": { "hp": 0, "mp": 0, "atk": 0, "def": 0, "spirit": 0, "luck": 0 },
+    "title": "登仙已成",
+    "titleEn": "Immortal Ascendant"
+  }
+]

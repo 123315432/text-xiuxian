@@ -1,0 +1,150 @@
+- generic [ref=e735]:
+  - banner [ref=e736]:
+    - generic [ref=e737]:
+      - generic [ref=e738]:
+        - generic [ref=e739]: 道
+        - generic [ref=e740]:
+          - generic [ref=e741]: 文字修仙
+          - generic [ref=e742]: 练气 · 命火未灭
+      - generic [ref=e743]:
+        - generic [ref=e744]:
+          - generic [ref=e745]: 道号
+          - strong [ref=e746]: 问剑居士
+        - generic [ref=e747]:
+          - generic [ref=e748]: 第几日
+          - strong [ref=e749]: 第 2 日
+        - generic [ref=e750]:
+          - generic [ref=e751]: 灵石
+          - strong [ref=e752]: "30"
+    - generic [ref=e753]:
+      - button "转世" [ref=e754] [cursor=pointer]
+      - button "存档" [ref=e755] [cursor=pointer]
+      - button "读档" [ref=e756] [cursor=pointer]
+      - button "重开" [ref=e757] [cursor=pointer]
+  - generic [ref=e758]:
+    - main [ref=e759]:
+      - generic [ref=e760]:
+        - generic [ref=e761]:
+          - generic [ref=e762]:
+            - generic [ref=e763]: 日程
+            - heading "适合继续外出历练" [level=1] [ref=e764]
+            - paragraph [ref=e765]: 每次历练会推进 1 日，积攒修为并触发随机事件。
+          - generic [ref=e766]:
+            - generic [ref=e768]:
+              - generic [ref=e769]: 气血
+              - strong [ref=e770]: 120/138
+            - generic [ref=e774]:
+              - generic [ref=e775]: 灵力
+              - strong [ref=e776]: 80/94
+            - generic [ref=e780]:
+              - generic [ref=e781]: 修为
+              - strong [ref=e782]: 28/100
+            - generic [ref=e786]:
+              - generic [ref=e787]: 寿元
+              - strong [ref=e788]: 119/120
+        - complementary [ref=e791]:
+          - generic [ref=e792]:
+            - img "角色头像" [ref=e793]
+            - generic [ref=e794]:
+              - generic [ref=e795]: 修士形象
+              - strong [ref=e796]: 问剑居士
+              - paragraph [ref=e797]: 练气 · 初窥仙途
+          - figure "当前境界 练气 距离下一境还差 12 修为。" [ref=e798]:
+            - img "练气" [ref=e799]
+            - generic [ref=e800]:
+              - generic [ref=e801]: 当前境界
+              - strong [ref=e802]: 练气
+              - paragraph [ref=e803]: 距离下一境还差 12 修为。
+      - generic [ref=e804]:
+        - generic [ref=e805]:
+          - generic [ref=e806]:
+            - generic [ref=e807]: 叙事卷轴
+            - heading "山门初醒，风起未央" [level=2] [ref=e808]
+          - button "全日志" [ref=e809] [cursor=pointer]
+        - generic [ref=e810]:
+          - generic [ref=e811]: 你在论道中获益匪浅。
+          - generic [ref=e812]: 第2日，石亭论道降临。
+          - generic [ref=e813]: 你在山门外醒来，踏上修仙之路。
+      - generic [ref=e814]:
+        - generic [ref=e815]:
+          - generic [ref=e816]: 行程指令
+          - paragraph [ref=e817]: 继续历练可积攒修为，还差 12 修为达到当前境界门槛。
+        - generic [ref=e818]:
+          - button "外出历练" [ref=e819] [cursor=pointer]
+          - button "尝试突破" [disabled] [ref=e820]
+          - button "背包总览" [ref=e821] [cursor=pointer]
+          - button "当前战斗" [disabled] [ref=e822]
+          - button "预览事件" [ref=e823] [cursor=pointer]
+          - button "保存进度" [ref=e824] [cursor=pointer]
+    - complementary [ref=e825]:
+      - generic [ref=e826]:
+        - generic [ref=e828]:
+          - generic [ref=e829]: 角色面板
+          - heading "基础状态" [level=3] [ref=e830]
+        - generic [ref=e831]:
+          - generic [ref=e832]:
+            - generic [ref=e833]: 境界
+            - strong [ref=e834]: 练气
+          - generic [ref=e835]:
+            - generic [ref=e836]: 突破进度
+            - strong [ref=e837]: "10"
+          - generic [ref=e838]:
+            - generic [ref=e839]: 突破需求
+            - strong [ref=e840]: "40"
+          - generic [ref=e841]:
+            - generic [ref=e842]: 攻击
+            - strong [ref=e843]: "16"
+          - generic [ref=e844]:
+            - generic [ref=e845]: 防御
+            - strong [ref=e846]: "11"
+          - generic [ref=e847]:
+            - generic [ref=e848]: 神识
+            - strong [ref=e849]: "12"
+          - generic [ref=e850]:
+            - generic [ref=e851]: 气运
+            - strong [ref=e852]: "7"
+          - generic [ref=e853]:
+            - generic [ref=e854]: 已学功法
+            - strong [ref=e855]: "1"
+          - generic [ref=e856]:
+            - generic [ref=e857]: 背包物品
+            - strong [ref=e858]: "2"
+          - generic [ref=e859]:
+            - generic [ref=e860]: 装备法宝
+            - strong [ref=e861]: "0"
+          - generic [ref=e862]:
+            - generic [ref=e863]: 门派
+            - strong [ref=e864]: 散修
+          - generic [ref=e865]:
+            - generic [ref=e866]: 存档时间
+            - strong [ref=e867]: 05/06 15:54
+          - generic [ref=e868]:
+            - generic [ref=e869]: 当前状态
+            - strong [ref=e870]: 空闲
+        - generic [ref=e872]:
+          - generic [ref=e873]: 突破准备度
+          - generic [ref=e874]: 91% 成功率
+      - generic [ref=e877]:
+        - generic [ref=e878]:
+          - generic [ref=e879]:
+            - generic [ref=e880]: 功法与收藏
+            - heading "当前底牌" [level=3] [ref=e881]
+          - button "查看全部" [ref=e882] [cursor=pointer]
+        - generic [ref=e883]:
+          - generic [ref=e884]:
+            - generic [ref=e885]: 已学功法
+            - strong [ref=e886]: "1"
+          - generic [ref=e888]:
+            - strong [ref=e889]: 吐纳剑诀
+            - generic [ref=e890]: 耗蓝 12
+        - generic [ref=e891]:
+          - generic [ref=e892]:
+            - generic [ref=e893]: 随身物件
+            - strong [ref=e894]: "2"
+          - generic [ref=e895]:
+            - generic [ref=e896]:
+              - strong [ref=e897]: 聚气丹
+              - generic [ref=e898]: x1
+            - generic [ref=e899]:
+              - strong [ref=e900]: 回春丹
+              - generic [ref=e901]: x1
