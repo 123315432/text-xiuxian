@@ -25,3 +25,4 @@ release-private/
 *.njsproj
 *.sln
 *.sw?
+.axon/
